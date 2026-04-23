@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" /><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" /><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" /><feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF" /><rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.8 Khi nào dùng Redis vs RDBMS?</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <g filter="url(#shadow)"><path fill="#FFFFFF" d="M72,100 H608 A12,12 0 0 1 620,112 V618 A12,12 0 0 1 608,630 H72 A12,12 0 0 1 60,618 V112 A12,12 0 0 1 72,100 Z" />
+  <path fill="#D12B1F" d="M72,100 H608 A12,12 0 0 1 620,112 V143 A12,12 0 0 1 608,155 H72 A12,12 0 0 1 60,143 V112 A12,12 0 0 1 72,100 Z" /><rect x="60" y="143" width="560" height="12" fill="#D12B1F" />
+  <text x="340" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">Nên dùng Redis</text></g>
+  <g><circle cx="110" cy="195" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="110" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <text x="140" y="200" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Caching dữ liệu</text></g>
+  <g><circle cx="110" cy="245" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="110" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <text x="140" y="250" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Session management</text></g>
+  <g><circle cx="110" cy="295" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="110" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <text x="140" y="300" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Real-time analytics</text></g>
+  <g><circle cx="110" cy="345" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="110" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <text x="140" y="350" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Message Queue / Pub-Sub</text></g>
+  <g><circle cx="110" cy="395" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="110" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <text x="140" y="400" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Leaderboard / Ranking</text></g>
+  <g><circle cx="110" cy="445" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="110" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+  <text x="140" y="450" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Rate Limiting</text></g>
+
+  
+  <g filter="url(#shadow)"><path fill="#FFFFFF" d="M672,100 H1208 A12,12 0 0 1 1220,112 V618 A12,12 0 0 1 1208,630 H672 A12,12 0 0 1 660,618 V112 A12,12 0 0 1 672,100 Z" />
+  <path fill="#0B4DA2" d="M672,100 H1208 A12,12 0 0 1 1220,112 V143 A12,12 0 0 1 1208,155 H672 A12,12 0 0 1 660,143 V112 A12,12 0 0 1 672,100 Z" /><rect x="660" y="143" width="560" height="12" fill="#0B4DA2" />
+  <text x="940" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">Nên dùng RDBMS</text></g>
+  <g><circle cx="710" cy="195" r="16" fill="#0B4DA2" fill-opacity="0.1" /><text x="710" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0B4DA2">✓</text>
+  <text x="740" y="200" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Giao dịch tài chính (ACID)</text></g>
+  <g><circle cx="710" cy="245" r="16" fill="#0B4DA2" fill-opacity="0.1" /><text x="710" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0B4DA2">✓</text>
+  <text x="740" y="250" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Dữ liệu quan hệ phức tạp</text></g>
+  <g><circle cx="710" cy="295" r="16" fill="#0B4DA2" fill-opacity="0.1" /><text x="710" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0B4DA2">✓</text>
+  <text x="740" y="300" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Báo cáo phức tạp với JOIN</text></g>
+  <g><circle cx="710" cy="345" r="16" fill="#0B4DA2" fill-opacity="0.1" /><text x="710" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0B4DA2">✓</text>
+  <text x="740" y="350" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Schema chặt chẽ, kiểm toán</text></g>
+  <g><circle cx="710" cy="395" r="16" fill="#0B4DA2" fill-opacity="0.1" /><text x="710" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0B4DA2">✓</text>
+  <text x="740" y="400" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Nhất quán tuyệt đối</text></g>
+
+  
+  <circle cx="640" cy="380" r="28" fill="#FF6B35" /><text x="640" y="388" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">VS</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">13 / 25</text>
+</svg>

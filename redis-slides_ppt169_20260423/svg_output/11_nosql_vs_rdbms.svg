@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="6" fill="#0B4DA2"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.6-3.7 NoSQL vs RDBMS</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#D12B1F"/>
+
+  <g filter="url(#shadow)"><rect x="60" y="95" width="1160" height="560" rx="12" fill="#FFFFFF"/></g>
+  <!-- Header -->
+  <rect x="60" y="95" width="1160" height="50" rx="12" fill="#0B4DA2"/><rect x="60" y="133" width="1160" height="12" fill="#0B4DA2"/>
+  <text x="230" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Tiêu chí</text>
+  <text x="560" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">RDBMS</text>
+  <text x="920" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">NoSQL (Redis)</text>
+
+  <!-- Rows -->
+  <rect x="80" y="158" width="300" height="60" rx="6" fill="#E5F4F9"/><text x="230" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Cấu trúc dữ liệu</text>
+  <text x="560" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Rigid schema (bảng, cột)</text>
+  <text x="920" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Flexible (key-value...)</text>
+
+  <rect x="80" y="228" width="300" height="60" rx="6" fill="#F5F7FA"/><text x="230" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">ETL</text>
+  <text x="560" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Bắt buộc</text>
+  <text x="920" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Không bắt buộc</text>
+
+  <rect x="80" y="298" width="300" height="60" rx="6" fill="#E5F4F9"/><text x="230" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Lưu trữ</text>
+  <text x="560" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Hàng và cột</text>
+  <text x="920" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Key-Value, Doc, Column, Graph</text>
+
+  <rect x="80" y="368" width="300" height="60" rx="6" fill="#F5F7FA"/><text x="230" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Transaction</text>
+  <text x="560" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">ACID</text>
+  <text x="920" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">BASE</text>
+
+  <rect x="80" y="438" width="300" height="60" rx="6" fill="#E5F4F9"/><text x="230" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Mở rộng</text>
+  <text x="560" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Vertical (máy mạnh hơn)</text>
+  <text x="920" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Horizontal (thêm máy rẻ)</text>
+
+  <rect x="80" y="508" width="300" height="60" rx="6" fill="#F5F7FA"/><text x="230" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Ngôn ngữ</text>
+  <text x="560" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">SQL</text>
+  <text x="920" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Redis Commands</text>
+
+  <rect x="80" y="578" width="300" height="60" rx="6" fill="#E5F4F9"/><text x="230" y="613" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Trạng thái</text>
+  <text x="560" y="613" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Mature (ổn định)</text>
+  <text x="920" y="613" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Incubation (phát triển nhanh)</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">11 / 25</text>
+</svg>

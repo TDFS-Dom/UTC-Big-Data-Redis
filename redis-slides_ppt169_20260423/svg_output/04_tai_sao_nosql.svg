@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.2 Tại sao cần NoSQL?</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#D12B1F"/>
+
+  <!-- Cột trái: Hạn chế RDBMS -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="100" width="560" height="520" rx="12" fill="#FFFFFF"/>
+    <rect x="60" y="100" width="560" height="50" rx="12" fill="#C62828"/>
+    <rect x="60" y="138" width="560" height="12" fill="#C62828"/>
+    <text x="340" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Hạn chế của RDBMS</text>
+  </g>
+  <g>
+    <circle cx="110" cy="190" r="16" fill="#C62828" fill-opacity="0.1"/><text x="110" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="195" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Chỉ hỗ trợ dữ liệu có cấu trúc</text>
+  </g>
+  <g>
+    <circle cx="110" cy="240" r="16" fill="#C62828" fill-opacity="0.1"/><text x="110" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="245" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Khó xử lý dữ liệu phi cấu trúc</text>
+  </g>
+  <g>
+    <circle cx="110" cy="290" r="16" fill="#C62828" fill-opacity="0.1"/><text x="110" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="295" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Mở rộng dọc (Vertical) đắt đỏ</text>
+  </g>
+  <g>
+    <circle cx="110" cy="340" r="16" fill="#C62828" fill-opacity="0.1"/><text x="110" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="345" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Schema cứng nhắc, khó thay đổi</text>
+  </g>
+  <g>
+    <circle cx="110" cy="390" r="16" fill="#C62828" fill-opacity="0.1"/><text x="110" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="395" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Không phù hợp Big Data</text>
+  </g>
+
+  <!-- Cột phải: Ưu điểm NoSQL / Redis -->
+  <g filter="url(#shadow)">
+    <rect x="660" y="100" width="560" height="520" rx="12" fill="#FFFFFF"/>
+    <rect x="660" y="100" width="560" height="50" rx="12" fill="#2E7D32"/>
+    <rect x="660" y="138" width="560" height="12" fill="#2E7D32"/>
+    <text x="940" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Ưu điểm NoSQL &amp; Redis</text>
+  </g>
+  <g>
+    <circle cx="710" cy="190" r="16" fill="#2E7D32" fill-opacity="0.1"/><text x="710" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+    <text x="740" y="195" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Hỗ trợ mọi loại dữ liệu</text>
+  </g>
+  <g>
+    <circle cx="710" cy="240" r="16" fill="#2E7D32" fill-opacity="0.1"/><text x="710" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+    <text x="740" y="245" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Mở rộng ngang trên phần cứng rẻ</text>
+  </g>
+  <g>
+    <circle cx="710" cy="290" r="16" fill="#2E7D32" fill-opacity="0.1"/><text x="710" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+    <text x="740" y="295" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Schemaless — linh hoạt tối đa</text>
+  </g>
+  <g>
+    <circle cx="710" cy="340" r="16" fill="#2E7D32" fill-opacity="0.1"/><text x="710" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+    <text x="740" y="345" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Phù hợp Big Data &amp; Real-time</text>
+  </g>
+
+  <!-- Redis highlight box -->
+  <rect x="690" y="400" width="500" height="190" rx="12" fill="#D12B1F" fill-opacity="0.06" stroke="#D12B1F" stroke-width="1.5" stroke-opacity="0.3"/>
+  <text x="710" y="435" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#D12B1F">Tại sao chọn Redis?</text>
+  <use data-icon="chunk/cloud-lightning" x="710" y="455" width="24" height="24" fill="#D12B1F"/>
+  <text x="745" y="475" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tốc độ cực nhanh — In-memory (RAM)</text>
+  <use data-icon="chunk/clock" x="710" y="490" width="24" height="24" fill="#D12B1F"/>
+  <text x="745" y="510" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Độ trễ thấp — micro giây</text>
+  <use data-icon="chunk/grid" x="710" y="525" width="24" height="24" fill="#D12B1F"/>
+  <text x="745" y="545" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Đa dụng — Cache, Session, Pub/Sub</text>
+  <use data-icon="chunk/layers" x="710" y="560" width="24" height="24" fill="#D12B1F"/>
+  <text x="745" y="580" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">5 kiểu dữ liệu phong phú</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">04 / 25</text>
+</svg>

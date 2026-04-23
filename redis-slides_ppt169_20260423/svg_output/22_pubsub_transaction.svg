@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="6" fill="#D12B1F"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">Demo: Pub/Sub &amp; Transaction</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#0B4DA2"/>
+
+  <!-- Pub/Sub -->
+  <text x="60" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#006AF9">Pub/Sub — Messaging</text>
+  <rect x="60" y="120" width="560" height="200" rx="10" fill="#1E293B"/>
+  <text x="80" y="148" font-family="Consolas, monospace" font-size="13" fill="#718096"># Terminal 1: Subscriber</text>
+  <text x="80" y="170" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SUBSCRIBE news</text>
+  <text x="80" y="192" font-family="Consolas, monospace" font-size="13" fill="#2E7D32">Reading messages...</text>
+  <text x="80" y="222" font-family="Consolas, monospace" font-size="13" fill="#718096"># Terminal 2: Publisher</text>
+  <text x="80" y="244" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">PUBLISH news "Redis 8.0 released!"</text>
+  <text x="80" y="274" font-family="Consolas, monospace" font-size="13" fill="#718096"># Terminal 1 nhận được:</text>
+  <text x="80" y="296" font-family="Consolas, monospace" font-size="13" fill="#2E7D32">1) "message" 2) "news" 3) "Redis 8.0 released!"</text>
+
+  <!-- Transaction -->
+  <text x="660" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#D12B1F">Transaction — MULTI/EXEC</text>
+  <rect x="660" y="120" width="560" height="260" rx="10" fill="#1E293B"/>
+  <text x="680" y="148" font-family="Consolas, monospace" font-size="13" fill="#718096"># Chuyển tiền: A → B</text>
+  <text x="680" y="170" font-family="Consolas, monospace" font-size="13" fill="#FF6B35">MULTI</text>
+  <text x="680" y="192" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SET account:A 1000    <tspan fill="#718096">QUEUED</tspan></text>
+  <text x="680" y="214" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SET account:B 2000    <tspan fill="#718096">QUEUED</tspan></text>
+  <text x="680" y="236" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">DECRBY account:A 500  <tspan fill="#718096">QUEUED</tspan></text>
+  <text x="680" y="258" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">INCRBY account:B 500  <tspan fill="#718096">QUEUED</tspan></text>
+  <text x="680" y="280" font-family="Consolas, monospace" font-size="13" fill="#FF6B35">EXEC</text>
+  <text x="680" y="310" font-family="Consolas, monospace" font-size="13" fill="#2E7D32">1) OK  2) OK  3) 500  4) 2500</text>
+  <text x="680" y="340" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">GET account:A  <tspan fill="#2E7D32">"500"</tspan></text>
+  <text x="680" y="362" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">GET account:B  <tspan fill="#2E7D32">"2500"</tspan></text>
+
+  <!-- Note boxes -->
+  <rect x="60" y="345" width="560" height="70" rx="8" fill="#006AF9" fill-opacity="0.05"/>
+  <text x="90" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#006AF9">Pub/Sub:</text>
+  <text x="180" y="375" font-family="Arial, sans-serif" font-size="14" fill="#2D3748">Real-time messaging giữa publisher và subscriber</text>
+  <text x="90" y="398" font-family="Consolas, monospace" font-size="13" fill="#718096">SUBSCRIBE channel | PUBLISH channel message</text>
+
+  <rect x="660" y="400" width="560" height="70" rx="8" fill="#D12B1F" fill-opacity="0.05"/>
+  <text x="690" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">Transaction:</text>
+  <text x="810" y="430" font-family="Arial, sans-serif" font-size="14" fill="#2D3748">Thực thi nhóm lệnh atomic (tất cả hoặc không)</text>
+  <text x="690" y="453" font-family="Consolas, monospace" font-size="13" fill="#718096">MULTI → commands → EXEC | DISCARD</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">22 / 25</text>
+</svg>

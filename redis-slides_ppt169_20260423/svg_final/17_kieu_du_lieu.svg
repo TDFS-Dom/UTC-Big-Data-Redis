@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" /><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" /><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" /><feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF" /><rect x="0" y="0" width="1280" height="6" fill="#D12B1F" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">5 Kiểu dữ liệu trong Redis</text>
+  <path fill="#0B4DA2" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M72,100 H418 A12,12 0 0 1 430,112 V268 A12,12 0 0 1 418,280 H72 A12,12 0 0 1 60,268 V112 A12,12 0 0 1 72,100 Z" /><path fill="#D12B1F" d="M63,100 H427 A3,3 0 0 1 430,103 V103 A3,3 0 0 1 427,106 H63 A3,3 0 0 1 60,103 V103 A3,3 0 0 1 63,100 Z" />
+    
+  <g transform="translate(90.0, 130.0) scale(2.0)" fill="#D12B1F">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.54944 12L3.21611 15H5.22841L5.56175 12H9.54944L9.21611 15H11.2284L11.5617 12H14.5552L14.7774 10H11.784L12.2284 6H15.2218L15.4441 4H12.4506L12.784 1H10.7717L10.4383 4H6.45064L6.78397 1H4.77166L4.43833 4H1.44431L1.22209 6H4.21611L3.77166 10H0.777642L0.55542 12H3.54944ZM5.78397 10H9.77166L10.2161 6H6.22841L5.78397 10Z" />
+  </g>
+    <text x="135" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D12B1F">String</text>
+    <text x="90" y="185" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Chuỗi, số, binary</text>
+    <text x="90" y="210" font-family="Arial, sans-serif" font-size="14" fill="#718096">Cache, counter, session token</text>
+    <text x="90" y="245" font-family="Consolas, monospace" font-size="13" fill="#006AF9">SET / GET / INCR / MSET</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M467,100 H813 A12,12 0 0 1 825,112 V268 A12,12 0 0 1 813,280 H467 A12,12 0 0 1 455,268 V112 A12,12 0 0 1 467,100 Z" /><path fill="#0B4DA2" d="M458,100 H822 A3,3 0 0 1 825,103 V103 A3,3 0 0 1 822,106 H458 A3,3 0 0 1 455,103 V103 A3,3 0 0 1 458,100 Z" />
+    
+  <g transform="translate(485.0, 130.0) scale(2.0)" fill="#0B4DA2">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1H1V7H7V1ZM7 9H1V15H7V9ZM9 1H15V7H9V1ZM15 9H9V15H15V9Z" />
+  </g>
+    <text x="530" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0B4DA2">Hash</text>
+    <text x="485" y="185" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tập hợp field-value (object)</text>
+    <text x="485" y="210" font-family="Arial, sans-serif" font-size="14" fill="#718096">User profile, product info</text>
+    <text x="485" y="245" font-family="Consolas, monospace" font-size="13" fill="#006AF9">HSET / HGET / HGETALL</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M862,100 H1208 A12,12 0 0 1 1220,112 V268 A12,12 0 0 1 1208,280 H862 A12,12 0 0 1 850,268 V112 A12,12 0 0 1 862,100 Z" /><path fill="#006AF9" d="M853,100 H1217 A3,3 0 0 1 1220,103 V103 A3,3 0 0 1 1217,106 H853 A3,3 0 0 1 850,103 V103 A3,3 0 0 1 853,100 Z" />
+    
+  <g transform="translate(880.0, 130.0) scale(2.0)" fill="#006AF9">
+    <path d="M3 1H1V3H3V1Z" />
+    <path d="M3 5H1V7H3V5Z" />
+    <path d="M1 9H3V11H1V9Z" />
+    <path d="M3 13H1V15H3V13Z" />
+    <path d="M15 1H5V3H15V1Z" />
+    <path d="M15 5H5V7H15V5Z" />
+    <path d="M5 9H15V11H5V9Z" />
+    <path d="M15 13H5V15H15V13Z" />
+  </g>
+    <text x="925" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#006AF9">List</text>
+    <text x="880" y="185" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Danh sách có thứ tự</text>
+    <text x="880" y="210" font-family="Arial, sans-serif" font-size="14" fill="#718096">Message queue, timeline</text>
+    <text x="880" y="245" font-family="Consolas, monospace" font-size="13" fill="#006AF9">LPUSH / RPUSH / LPOP</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M182,310 H578 A12,12 0 0 1 590,322 V478 A12,12 0 0 1 578,490 H182 A12,12 0 0 1 170,478 V322 A12,12 0 0 1 182,310 Z" /><path fill="#2E7D32" d="M173,310 H587 A3,3 0 0 1 590,313 V313 A3,3 0 0 1 587,316 H173 A3,3 0 0 1 170,313 V313 A3,3 0 0 1 173,310 Z" />
+    
+  <g transform="translate(200.0, 340.0) scale(2.0)" fill="#2E7D32">
+    <path d="M1 5V3L8 0L15 3V5L8 8L1 5Z" />
+    <path d="M8 16L1 13V11L8 14L15 11V13L8 16Z" />
+    <path d="M1 9L8 12L15 9V7L8 10L1 7V9Z" />
+  </g>
+    <text x="245" y="360" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32">Set</text>
+    <text x="200" y="395" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tập hợp không trùng lặp, không thứ tự</text>
+    <text x="200" y="420" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tags, unique visitors, phép toán tập hợp</text>
+    <text x="200" y="455" font-family="Consolas, monospace" font-size="13" fill="#006AF9">SADD / SMEMBERS / SINTER / SUNION</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M632,310 H1128 A12,12 0 0 1 1140,322 V478 A12,12 0 0 1 1128,490 H632 A12,12 0 0 1 620,478 V322 A12,12 0 0 1 632,310 Z" /><path fill="#FF6B35" d="M623,310 H1137 A3,3 0 0 1 1140,313 V313 A3,3 0 0 1 1137,316 H623 A3,3 0 0 1 620,313 V313 A3,3 0 0 1 623,310 Z" />
+    
+  <g transform="translate(650.0, 340.0) scale(2.0)" fill="#FF6B35">
+    <path d="M9.00001 0H7.00001L5.51292 4.57681L0.700554 4.57682L0.0825195 6.47893L3.97581 9.30756L2.48873 13.8843L4.10677 15.0599L8.00002 12.2313L11.8933 15.0599L13.5113 13.8843L12.0242 9.30754L15.9175 6.47892L15.2994 4.57681L10.4871 4.57681L9.00001 0Z" />
+  </g>
+    <text x="695" y="360" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FF6B35">Sorted Set</text>
+    <text x="650" y="395" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tập hợp không trùng lặp + điểm số (score)</text>
+    <text x="650" y="420" font-family="Arial, sans-serif" font-size="14" fill="#718096">Leaderboard, ranking, bảng xếp hạng</text>
+    <text x="650" y="455" font-family="Consolas, monospace" font-size="13" fill="#006AF9">ZADD / ZREVRANGE / ZRANK / ZCOUNT</text>
+  </g>
+
+  
+  <circle cx="640" cy="570" r="50" fill="#D12B1F" fill-opacity="0.1" stroke="#D12B1F" stroke-width="2" />
+  
+  <g transform="translate(616.0, 546.0) scale(3.0)" fill="#D12B1F">
+    <path d="M13.1371 6.91018C13.4184 6.7695 13.7123 6.59981 14 6.40001V8C14 9.65685 11.3137 11 8 11C4.68629 11 2 9.65685 2 8V6.40001C2.28772 6.59981 2.58158 6.7695 2.86293 6.91018C4.28096 7.61919 6.09998 8 8 8C9.90002 8 11.719 7.61919 13.1371 6.91018Z" />
+    <path d="M2 11.4V13C2 14.6569 4.68629 16 8 16C11.3137 16 14 14.6569 14 13V11.4C13.7123 11.5998 13.4184 11.7695 13.1371 11.9102C11.719 12.6192 9.90002 13 8 13C6.09998 13 4.28096 12.6192 2.86293 11.9102C2.58158 11.7695 2.28772 11.5998 2 11.4Z" />
+    <path d="M8 0C11.3137 0 14 1.34315 14 3C14 4.65685 11.3137 6 8 6C4.68629 6 2 4.65685 2 3C2 1.34315 4.68629 0 8 0Z" />
+  </g>
+  <text x="640" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Redis Data Types</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">17 / 25</text>
+</svg>

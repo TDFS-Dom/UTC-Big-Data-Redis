@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">So sánh ACID: RDBMS vs Redis</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M72,100 H1208 A12,12 0 0 1 1220,112 V568 A12,12 0 0 1 1208,580 H72 A12,12 0 0 1 60,568 V112 A12,12 0 0 1 72,100 Z" />
+  </g>
+  
+  <path fill="#0B4DA2" d="M72,100 H1208 A12,12 0 0 1 1220,112 V143 A12,12 0 0 1 1208,155 H72 A12,12 0 0 1 60,143 V112 A12,12 0 0 1 72,100 Z" />
+  <rect x="60" y="143" width="1160" height="12" fill="#0B4DA2" />
+  <text x="220" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Tính chất</text>
+  <text x="540" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">RDBMS</text>
+  <text x="900" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Redis</text>
+
+  
+  <path fill="#E5F4F9" d="M88,170 H312 A8,8 0 0 1 320,178 V252 A8,8 0 0 1 312,260 H88 A8,8 0 0 1 80,252 V178 A8,8 0 0 1 88,170 Z" />
+  <circle cx="115" cy="215" r="22" fill="#0B4DA2" /><text x="115" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">A</text>
+  <text x="150" y="208" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#0B4DA2">Atomicity</text>
+  <text x="150" y="230" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tính nguyên tử</text>
+  <path fill="#2E7D32" fill-opacity="0.06" d="M348,170 H702 A8,8 0 0 1 710,178 V252 A8,8 0 0 1 702,260 H348 A8,8 0 0 1 340,252 V178 A8,8 0 0 1 348,170 Z" />
+  <text x="525" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Đầy đủ ✓</text>
+  <text x="525" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Full ACID transaction</text>
+  <path fill="#FF6B35" fill-opacity="0.06" d="M738,170 H1192 A8,8 0 0 1 1200,178 V252 A8,8 0 0 1 1192,260 H738 A8,8 0 0 1 730,252 V178 A8,8 0 0 1 738,170 Z" />
+  <text x="965" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF6B35">Hỗ trợ qua MULTI/EXEC</text>
+  <text x="965" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Transaction cơ bản</text>
+
+  
+  <path fill="#F5F7FA" d="M88,275 H312 A8,8 0 0 1 320,283 V357 A8,8 0 0 1 312,365 H88 A8,8 0 0 1 80,357 V283 A8,8 0 0 1 88,275 Z" />
+  <circle cx="115" cy="320" r="22" fill="#D12B1F" /><text x="115" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">C</text>
+  <text x="150" y="313" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#D12B1F">Consistency</text>
+  <text x="150" y="335" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tính nhất quán</text>
+  <path fill="#2E7D32" fill-opacity="0.06" d="M348,275 H702 A8,8 0 0 1 710,283 V357 A8,8 0 0 1 702,365 H348 A8,8 0 0 1 340,357 V283 A8,8 0 0 1 348,275 Z" />
+  <text x="525" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Đầy đủ ✓</text>
+  <path fill="#FF6B35" fill-opacity="0.06" d="M738,275 H1192 A8,8 0 0 1 1200,283 V357 A8,8 0 0 1 1192,365 H738 A8,8 0 0 1 730,357 V283 A8,8 0 0 1 738,275 Z" />
+  <text x="965" y="313" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF6B35">Tùy cấu hình</text>
+  <text x="965" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">RDB / AOF persistence</text>
+
+  
+  <path fill="#E5F4F9" d="M88,380 H312 A8,8 0 0 1 320,388 V462 A8,8 0 0 1 312,470 H88 A8,8 0 0 1 80,462 V388 A8,8 0 0 1 88,380 Z" />
+  <circle cx="115" cy="425" r="22" fill="#006AF9" /><text x="115" y="432" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">I</text>
+  <text x="150" y="418" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#006AF9">Isolation</text>
+  <text x="150" y="440" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tính cô lập</text>
+  <path fill="#2E7D32" fill-opacity="0.06" d="M348,380 H702 A8,8 0 0 1 710,388 V462 A8,8 0 0 1 702,470 H348 A8,8 0 0 1 340,462 V388 A8,8 0 0 1 348,380 Z" />
+  <text x="525" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Đầy đủ ✓</text>
+  <path fill="#2E7D32" fill-opacity="0.06" d="M738,380 H1192 A8,8 0 0 1 1200,388 V462 A8,8 0 0 1 1192,470 H738 A8,8 0 0 1 730,462 V388 A8,8 0 0 1 738,380 Z" />
+  <text x="965" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Tự nhiên cô lập ✓</text>
+  <text x="965" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Single-threaded → tự cô lập</text>
+
+  
+  <path fill="#F5F7FA" d="M88,485 H312 A8,8 0 0 1 320,493 V567 A8,8 0 0 1 312,575 H88 A8,8 0 0 1 80,567 V493 A8,8 0 0 1 88,485 Z" />
+  <circle cx="115" cy="530" r="22" fill="#2E7D32" /><text x="115" y="537" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">D</text>
+  <text x="150" y="523" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2E7D32">Durability</text>
+  <text x="150" y="545" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tính bền vững</text>
+  <path fill="#2E7D32" fill-opacity="0.06" d="M348,485 H702 A8,8 0 0 1 710,493 V567 A8,8 0 0 1 702,575 H348 A8,8 0 0 1 340,567 V493 A8,8 0 0 1 348,485 Z" />
+  <text x="525" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Đầy đủ ✓</text>
+  <path fill="#FF6B35" fill-opacity="0.06" d="M738,485 H1192 A8,8 0 0 1 1200,493 V567 A8,8 0 0 1 1192,575 H738 A8,8 0 0 1 730,567 V493 A8,8 0 0 1 738,485 Z" />
+  <text x="965" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF6B35">Tùy chọn</text>
+  <text x="965" y="547" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">RDB snapshot / AOF log</text>
+
+  
+  <path fill="#D12B1F" fill-opacity="0.06" stroke="#D12B1F" stroke-width="1" stroke-opacity="0.3" d="M70,600 H1210 A10,10 0 0 1 1220,610 V650 A10,10 0 0 1 1210,660 H70 A10,10 0 0 1 60,650 V610 A10,10 0 0 1 70,600 Z" />
+  
+  <g transform="translate(80.0, 618.0) scale(1.5)" fill="#D12B1F">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16L4.35009 13.3929C2.24773 11.8912 1 9.46667 1 6.88306V3L8 0L15 3V6.88306C15 9.46667 13.7523 11.8912 11.6499 13.3929L8 16ZM12.2071 5.70711L10.7929 4.29289L7 8.08579L5.20711 6.29289L3.79289 7.70711L7 10.9142L12.2071 5.70711Z" />
+  </g>
+  <text x="115" y="636" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Lưu ý:</text>
+  <text x="185" y="636" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Redis không đảm bảo đầy đủ ACID như RDBMS. Redis theo mô hình BASE (phần tiếp theo).</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">08 / 25</text>
+</svg>

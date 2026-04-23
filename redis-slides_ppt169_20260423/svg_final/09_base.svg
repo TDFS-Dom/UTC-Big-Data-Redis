@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.5 BASE Properties</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+  <text x="60" y="95" font-family="Arial, sans-serif" font-size="16" fill="#718096">Mô hình thiết kế CSDL đối lập với ACID — NoSQL (Redis) tuân theo BASE</text>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M72,120 H418 A12,12 0 0 1 430,132 V588 A12,12 0 0 1 418,600 H72 A12,12 0 0 1 60,588 V132 A12,12 0 0 1 72,120 Z" />
+    <path fill="#0B4DA2" d="M64,120 H426 A4,4 0 0 1 430,124 V124 A4,4 0 0 1 426,128 H64 A4,4 0 0 1 60,124 V124 A4,4 0 0 1 64,120 Z" />
+    <circle cx="245" cy="195" r="40" fill="#0B4DA2" fill-opacity="0.1" />
+    <text x="245" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">BA</text>
+    <text x="245" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0B4DA2">Basically Available</text>
+    <text x="245" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#D12B1F">Cơ bản khả dụng</text>
+    <rect x="90" y="310" width="310" height="2" fill="#E2E8F0" />
+    <text x="100" y="345" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Hệ thống luôn sẵn sàng</text>
+    <text x="100" y="370" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">phục vụ dù có lỗi xảy ra.</text>
+    <path fill="#E5F4F9" d="M98,400 H392 A8,8 0 0 1 400,408 V452 A8,8 0 0 1 392,460 H98 A8,8 0 0 1 90,452 V408 A8,8 0 0 1 98,400 Z" />
+    
+  <g transform="translate(100.0, 415.0) scale(1.75)" fill="#D12B1F">
+    <path d="M13.1371 6.91018C13.4184 6.7695 13.7123 6.59981 14 6.40001V8C14 9.65685 11.3137 11 8 11C4.68629 11 2 9.65685 2 8V6.40001C2.28772 6.59981 2.58158 6.7695 2.86293 6.91018C4.28096 7.61919 6.09998 8 8 8C9.90002 8 11.719 7.61919 13.1371 6.91018Z" />
+    <path d="M2 11.4V13C2 14.6569 4.68629 16 8 16C11.3137 16 14 14.6569 14 13V11.4C13.7123 11.5998 13.4184 11.7695 13.1371 11.9102C11.719 12.6192 9.90002 13 8 13C6.09998 13 4.28096 12.6192 2.86293 11.9102C2.58158 11.7695 2.28772 11.5998 2 11.4Z" />
+    <path d="M8 0C11.3137 0 14 1.34315 14 3C14 4.65685 11.3137 6 8 6C4.68629 6 2 4.65685 2 3C2 1.34315 4.68629 0 8 0Z" />
+  </g>
+    <text x="140" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">Redis:</text>
+    <text x="140" y="448" font-family="Arial, sans-serif" font-size="13" fill="#718096">Sentinel tự động failover</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M467,120 H813 A12,12 0 0 1 825,132 V588 A12,12 0 0 1 813,600 H467 A12,12 0 0 1 455,588 V132 A12,12 0 0 1 467,120 Z" />
+    <path fill="#D12B1F" d="M459,120 H821 A4,4 0 0 1 825,124 V124 A4,4 0 0 1 821,128 H459 A4,4 0 0 1 455,124 V124 A4,4 0 0 1 459,120 Z" />
+    <circle cx="640" cy="195" r="40" fill="#D12B1F" fill-opacity="0.1" />
+    <text x="640" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">S</text>
+    <text x="640" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D12B1F">Soft State</text>
+    <text x="640" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0B4DA2">Trạng thái mềm</text>
+    <rect x="485" y="310" width="310" height="2" fill="#E2E8F0" />
+    <text x="495" y="345" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Dữ liệu có thể thay đổi</text>
+    <text x="495" y="370" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">theo thời gian (stale data).</text>
+    <path fill="#E5F4F9" d="M493,400 H787 A8,8 0 0 1 795,408 V452 A8,8 0 0 1 787,460 H493 A8,8 0 0 1 485,452 V408 A8,8 0 0 1 493,400 Z" />
+    
+  <g transform="translate(495.0, 415.0) scale(1.75)" fill="#D12B1F">
+    <path d="M13.1371 6.91018C13.4184 6.7695 13.7123 6.59981 14 6.40001V8C14 9.65685 11.3137 11 8 11C4.68629 11 2 9.65685 2 8V6.40001C2.28772 6.59981 2.58158 6.7695 2.86293 6.91018C4.28096 7.61919 6.09998 8 8 8C9.90002 8 11.719 7.61919 13.1371 6.91018Z" />
+    <path d="M2 11.4V13C2 14.6569 4.68629 16 8 16C11.3137 16 14 14.6569 14 13V11.4C13.7123 11.5998 13.4184 11.7695 13.1371 11.9102C11.719 12.6192 9.90002 13 8 13C6.09998 13 4.28096 12.6192 2.86293 11.9102C2.58158 11.7695 2.28772 11.5998 2 11.4Z" />
+    <path d="M8 0C11.3137 0 14 1.34315 14 3C14 4.65685 11.3137 6 8 6C4.68629 6 2 4.65685 2 3C2 1.34315 4.68629 0 8 0Z" />
+  </g>
+    <text x="535" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">Redis:</text>
+    <text x="535" y="448" font-family="Arial, sans-serif" font-size="13" fill="#718096">Cluster có độ trễ đồng bộ</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M862,120 H1208 A12,12 0 0 1 1220,132 V588 A12,12 0 0 1 1208,600 H862 A12,12 0 0 1 850,588 V132 A12,12 0 0 1 862,120 Z" />
+    <path fill="#2E7D32" d="M854,120 H1216 A4,4 0 0 1 1220,124 V124 A4,4 0 0 1 1216,128 H854 A4,4 0 0 1 850,124 V124 A4,4 0 0 1 854,120 Z" />
+    <circle cx="1035" cy="195" r="40" fill="#2E7D32" fill-opacity="0.1" />
+    <text x="1035" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2E7D32">E</text>
+    <text x="1035" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">Eventual Consistency</text>
+    <text x="1035" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#006AF9">Nhất quán cuối cùng</text>
+    <rect x="880" y="310" width="310" height="2" fill="#E2E8F0" />
+    <text x="890" y="345" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Dữ liệu sẽ nhất quán</text>
+    <text x="890" y="370" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">sau một khoảng thời gian.</text>
+    <path fill="#E5F4F9" d="M888,400 H1182 A8,8 0 0 1 1190,408 V452 A8,8 0 0 1 1182,460 H888 A8,8 0 0 1 880,452 V408 A8,8 0 0 1 888,400 Z" />
+    
+  <g transform="translate(890.0, 415.0) scale(1.75)" fill="#D12B1F">
+    <path d="M13.1371 6.91018C13.4184 6.7695 13.7123 6.59981 14 6.40001V8C14 9.65685 11.3137 11 8 11C4.68629 11 2 9.65685 2 8V6.40001C2.28772 6.59981 2.58158 6.7695 2.86293 6.91018C4.28096 7.61919 6.09998 8 8 8C9.90002 8 11.719 7.61919 13.1371 6.91018Z" />
+    <path d="M2 11.4V13C2 14.6569 4.68629 16 8 16C11.3137 16 14 14.6569 14 13V11.4C13.7123 11.5998 13.4184 11.7695 13.1371 11.9102C11.719 12.6192 9.90002 13 8 13C6.09998 13 4.28096 12.6192 2.86293 11.9102C2.58158 11.7695 2.28772 11.5998 2 11.4Z" />
+    <path d="M8 0C11.3137 0 14 1.34315 14 3C14 4.65685 11.3137 6 8 6C4.68629 6 2 4.65685 2 3C2 1.34315 4.68629 0 8 0Z" />
+  </g>
+    <text x="930" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">Redis:</text>
+    <text x="930" y="448" font-family="Arial, sans-serif" font-size="13" fill="#718096">Async replication</text>
+  </g>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">09 / 25</text>
+</svg>

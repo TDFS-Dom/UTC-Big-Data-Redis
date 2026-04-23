@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="6" fill="#D12B1F"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">Demo: String — SET, GET, INCR</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#0B4DA2"/>
+
+  <!-- Code block 1 -->
+  <text x="60" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">SET / GET cơ bản &amp; TTL</text>
+  <rect x="60" y="120" width="560" height="250" rx="10" fill="#1E293B"/>
+  <text x="80" y="148" font-family="Consolas, monospace" font-size="14" fill="#FF6B35">127.0.0.1:6379&gt;</text>
+  <text x="80" y="170" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">SET name "Nguyen Van A"</text>
+  <text x="80" y="192" font-family="Consolas, monospace" font-size="14" fill="#2E7D32">OK</text>
+  <text x="80" y="222" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">GET name</text>
+  <text x="80" y="244" font-family="Consolas, monospace" font-size="14" fill="#2E7D32">"Nguyen Van A"</text>
+  <text x="80" y="278" font-family="Consolas, monospace" font-size="14" fill="#718096"># Hết hạn sau 10 giây</text>
+  <text x="80" y="300" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">SET session:u1 "token" EX 10</text>
+  <text x="80" y="322" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">TTL session:u1</text>
+  <text x="80" y="344" font-family="Consolas, monospace" font-size="14" fill="#FF6B35">(integer) 8</text>
+
+  <!-- Code block 2 -->
+  <text x="660" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">INCR / DECRBY &amp; MSET / MGET</text>
+  <rect x="660" y="120" width="560" height="250" rx="10" fill="#1E293B"/>
+  <text x="680" y="148" font-family="Consolas, monospace" font-size="14" fill="#718096"># Đếm lượt truy cập</text>
+  <text x="680" y="170" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">SET page:views 0</text>
+  <text x="680" y="192" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">INCR page:views</text>
+  <text x="680" y="214" font-family="Consolas, monospace" font-size="14" fill="#FF6B35">(integer) 1</text>
+  <text x="680" y="240" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">INCRBY page:views 10</text>
+  <text x="680" y="262" font-family="Consolas, monospace" font-size="14" fill="#FF6B35">(integer) 11</text>
+  <text x="680" y="296" font-family="Consolas, monospace" font-size="14" fill="#718096"># Nhiều key cùng lúc</text>
+  <text x="680" y="318" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">MSET u:name "A" u:age "25"</text>
+  <text x="680" y="340" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">MGET u:name u:age</text>
+  <text x="680" y="362" font-family="Consolas, monospace" font-size="14" fill="#2E7D32">1) "A"  2) "25"</text>
+
+  <!-- Note box -->
+  <rect x="60" y="400" width="1160" height="80" rx="10" fill="#D12B1F" fill-opacity="0.05" stroke="#D12B1F" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="90" y="435" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Lệnh quan trọng:</text>
+  <text x="90" y="462" font-family="Consolas, monospace" font-size="15" fill="#2D3748">SET key value [EX seconds]  |  GET key  |  INCR key  |  INCRBY key n  |  MSET k1 v1 k2 v2  |  MGET k1 k2</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">18 / 25</text>
+</svg>

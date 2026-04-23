@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">So sánh ACID: RDBMS vs Redis</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#D12B1F"/>
+
+  <!-- Table -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="100" width="1160" height="480" rx="12" fill="#FFFFFF"/>
+  </g>
+  <!-- Header -->
+  <rect x="60" y="100" width="1160" height="55" rx="12" fill="#0B4DA2"/>
+  <rect x="60" y="143" width="1160" height="12" fill="#0B4DA2"/>
+  <text x="220" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Tính chất</text>
+  <text x="540" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">RDBMS</text>
+  <text x="900" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Redis</text>
+
+  <!-- Row A -->
+  <rect x="80" y="170" width="240" height="90" rx="8" fill="#E5F4F9"/>
+  <circle cx="115" cy="215" r="22" fill="#0B4DA2"/><text x="115" y="222" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">A</text>
+  <text x="150" y="208" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#0B4DA2">Atomicity</text>
+  <text x="150" y="230" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tính nguyên tử</text>
+  <rect x="340" y="170" width="370" height="90" rx="8" fill="#2E7D32" fill-opacity="0.06"/>
+  <text x="525" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Đầy đủ ✓</text>
+  <text x="525" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Full ACID transaction</text>
+  <rect x="730" y="170" width="470" height="90" rx="8" fill="#FF6B35" fill-opacity="0.06"/>
+  <text x="965" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF6B35">Hỗ trợ qua MULTI/EXEC</text>
+  <text x="965" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Transaction cơ bản</text>
+
+  <!-- Row C -->
+  <rect x="80" y="275" width="240" height="90" rx="8" fill="#F5F7FA"/>
+  <circle cx="115" cy="320" r="22" fill="#D12B1F"/><text x="115" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">C</text>
+  <text x="150" y="313" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#D12B1F">Consistency</text>
+  <text x="150" y="335" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tính nhất quán</text>
+  <rect x="340" y="275" width="370" height="90" rx="8" fill="#2E7D32" fill-opacity="0.06"/>
+  <text x="525" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Đầy đủ ✓</text>
+  <rect x="730" y="275" width="470" height="90" rx="8" fill="#FF6B35" fill-opacity="0.06"/>
+  <text x="965" y="313" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF6B35">Tùy cấu hình</text>
+  <text x="965" y="337" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">RDB / AOF persistence</text>
+
+  <!-- Row I -->
+  <rect x="80" y="380" width="240" height="90" rx="8" fill="#E5F4F9"/>
+  <circle cx="115" cy="425" r="22" fill="#006AF9"/><text x="115" y="432" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">I</text>
+  <text x="150" y="418" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#006AF9">Isolation</text>
+  <text x="150" y="440" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tính cô lập</text>
+  <rect x="340" y="380" width="370" height="90" rx="8" fill="#2E7D32" fill-opacity="0.06"/>
+  <text x="525" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Đầy đủ ✓</text>
+  <rect x="730" y="380" width="470" height="90" rx="8" fill="#2E7D32" fill-opacity="0.06"/>
+  <text x="965" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Tự nhiên cô lập ✓</text>
+  <text x="965" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Single-threaded → tự cô lập</text>
+
+  <!-- Row D -->
+  <rect x="80" y="485" width="240" height="90" rx="8" fill="#F5F7FA"/>
+  <circle cx="115" cy="530" r="22" fill="#2E7D32"/><text x="115" y="537" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">D</text>
+  <text x="150" y="523" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#2E7D32">Durability</text>
+  <text x="150" y="545" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tính bền vững</text>
+  <rect x="340" y="485" width="370" height="90" rx="8" fill="#2E7D32" fill-opacity="0.06"/>
+  <text x="525" y="530" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Đầy đủ ✓</text>
+  <rect x="730" y="485" width="470" height="90" rx="8" fill="#FF6B35" fill-opacity="0.06"/>
+  <text x="965" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF6B35">Tùy chọn</text>
+  <text x="965" y="547" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">RDB snapshot / AOF log</text>
+
+  <!-- Note -->
+  <rect x="60" y="600" width="1160" height="60" rx="10" fill="#D12B1F" fill-opacity="0.06" stroke="#D12B1F" stroke-width="1" stroke-opacity="0.3"/>
+  <use data-icon="chunk/shield-check" x="80" y="618" width="24" height="24" fill="#D12B1F"/>
+  <text x="115" y="636" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Lưu ý:</text>
+  <text x="185" y="636" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Redis không đảm bảo đầy đủ ACID như RDBMS. Redis theo mô hình BASE (phần tiếp theo).</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">08 / 25</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="6" fill="#0B4DA2"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">Cài đặt Redis bằng Docker</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#D12B1F"/>
+
+  <!-- Step 1 -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="100" width="370" height="530" rx="12" fill="#FFFFFF"/>
+    <circle cx="115" cy="145" r="24" fill="#0B4DA2"/><text x="115" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">1</text>
+    <text x="150" y="152" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0B4DA2">Cài Docker Desktop</text>
+    <rect x="90" y="175" width="310" height="2" fill="#E2E8F0"/>
+    <text x="90" y="205" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tải từ docker.com</text>
+    <text x="90" y="230" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Cài đặt và khởi động</text>
+    <use data-icon="chunk/folder" x="90" y="260" width="24" height="24" fill="#006AF9"/>
+    <text x="125" y="280" font-family="Consolas, monospace" font-size="13" fill="#006AF9">docker.com/products/</text>
+    <text x="125" y="298" font-family="Consolas, monospace" font-size="13" fill="#006AF9">docker-desktop/</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g filter="url(#shadow)">
+    <rect x="455" y="100" width="370" height="530" rx="12" fill="#FFFFFF"/>
+    <circle cx="510" cy="145" r="24" fill="#D12B1F"/><text x="510" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">2</text>
+    <text x="545" y="152" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#D12B1F">Pull &amp; Run Redis</text>
+    <rect x="485" y="175" width="310" height="2" fill="#E2E8F0"/>
+    <rect x="485" y="195" width="310" height="180" rx="8" fill="#1E293B"/>
+    <text x="500" y="220" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Pull image</text>
+    <text x="500" y="242" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">docker pull redis</text>
+    <text x="500" y="272" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Chạy container</text>
+    <text x="500" y="294" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">docker run \</text>
+    <text x="520" y="316" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">--name my-redis \</text>
+    <text x="520" y="338" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">-p 6379:6379 \</text>
+    <text x="520" y="360" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">-d redis</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g filter="url(#shadow)">
+    <rect x="850" y="100" width="370" height="530" rx="12" fill="#FFFFFF"/>
+    <circle cx="905" cy="145" r="24" fill="#2E7D32"/><text x="905" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">3</text>
+    <text x="940" y="152" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">Kết nối Redis CLI</text>
+    <rect x="880" y="175" width="310" height="2" fill="#E2E8F0"/>
+    <rect x="880" y="195" width="310" height="180" rx="8" fill="#1E293B"/>
+    <text x="895" y="220" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Vào Redis CLI</text>
+    <text x="895" y="242" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">docker exec -it \</text>
+    <text x="915" y="264" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">my-redis redis-cli</text>
+    <text x="895" y="300" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Test</text>
+    <text x="895" y="322" font-family="Consolas, monospace" font-size="13" fill="#FF6B35">127.0.0.1:6379&gt;</text>
+    <text x="895" y="344" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#E2E8F0">PING</text>
+    <text x="895" y="366" font-family="Consolas, monospace" font-size="14" font-weight="bold" fill="#2E7D32">PONG</text>
+
+    <rect x="880" y="400" width="310" height="50" rx="8" fill="#2E7D32" fill-opacity="0.08"/>
+    <use data-icon="chunk/circle-checkmark" x="895" y="413" width="24" height="24" fill="#2E7D32"/>
+    <text x="930" y="432" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#2E7D32">Thành công!</text>
+  </g>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">14 / 25</text>
+</svg>

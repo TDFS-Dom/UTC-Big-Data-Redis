@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" /><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" /><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" /><feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF" /><rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.6-3.7 NoSQL vs RDBMS</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  <g filter="url(#shadow)"><path fill="#FFFFFF" d="M72,95 H1208 A12,12 0 0 1 1220,107 V643 A12,12 0 0 1 1208,655 H72 A12,12 0 0 1 60,643 V107 A12,12 0 0 1 72,95 Z" /></g>
+  
+  <path fill="#0B4DA2" d="M72,95 H1208 A12,12 0 0 1 1220,107 V133 A12,12 0 0 1 1208,145 H72 A12,12 0 0 1 60,133 V107 A12,12 0 0 1 72,95 Z" /><rect x="60" y="133" width="1160" height="12" fill="#0B4DA2" />
+  <text x="230" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Tiêu chí</text>
+  <text x="560" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">RDBMS</text>
+  <text x="920" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">NoSQL (Redis)</text>
+
+  
+  <path fill="#E5F4F9" d="M86,158 H374 A6,6 0 0 1 380,164 V212 A6,6 0 0 1 374,218 H86 A6,6 0 0 1 80,212 V164 A6,6 0 0 1 86,158 Z" /><text x="230" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Cấu trúc dữ liệu</text>
+  <text x="560" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Rigid schema (bảng, cột)</text>
+  <text x="920" y="193" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Flexible (key-value...)</text>
+
+  <path fill="#F5F7FA" d="M86,228 H374 A6,6 0 0 1 380,234 V282 A6,6 0 0 1 374,288 H86 A6,6 0 0 1 80,282 V234 A6,6 0 0 1 86,228 Z" /><text x="230" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">ETL</text>
+  <text x="560" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Bắt buộc</text>
+  <text x="920" y="263" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Không bắt buộc</text>
+
+  <path fill="#E5F4F9" d="M86,298 H374 A6,6 0 0 1 380,304 V352 A6,6 0 0 1 374,358 H86 A6,6 0 0 1 80,352 V304 A6,6 0 0 1 86,298 Z" /><text x="230" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Lưu trữ</text>
+  <text x="560" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Hàng và cột</text>
+  <text x="920" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Key-Value, Doc, Column, Graph</text>
+
+  <path fill="#F5F7FA" d="M86,368 H374 A6,6 0 0 1 380,374 V422 A6,6 0 0 1 374,428 H86 A6,6 0 0 1 80,422 V374 A6,6 0 0 1 86,368 Z" /><text x="230" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Transaction</text>
+  <text x="560" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">ACID</text>
+  <text x="920" y="403" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">BASE</text>
+
+  <path fill="#E5F4F9" d="M86,438 H374 A6,6 0 0 1 380,444 V492 A6,6 0 0 1 374,498 H86 A6,6 0 0 1 80,492 V444 A6,6 0 0 1 86,438 Z" /><text x="230" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Mở rộng</text>
+  <text x="560" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Vertical (máy mạnh hơn)</text>
+  <text x="920" y="473" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Horizontal (thêm máy rẻ)</text>
+
+  <path fill="#F5F7FA" d="M86,508 H374 A6,6 0 0 1 380,514 V562 A6,6 0 0 1 374,568 H86 A6,6 0 0 1 80,562 V514 A6,6 0 0 1 86,508 Z" /><text x="230" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Ngôn ngữ</text>
+  <text x="560" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">SQL</text>
+  <text x="920" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Redis Commands</text>
+
+  <path fill="#E5F4F9" d="M86,578 H374 A6,6 0 0 1 380,584 V632 A6,6 0 0 1 374,638 H86 A6,6 0 0 1 80,632 V584 A6,6 0 0 1 86,578 Z" /><text x="230" y="613" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Trạng thái</text>
+  <text x="560" y="613" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Mature (ổn định)</text>
+  <text x="920" y="613" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#D12B1F">Incubation (phát triển nhanh)</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">11 / 25</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" /><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" /><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" /><feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF" /><rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.7.3 Các loại NoSQL Database</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M72,100 H613 A12,12 0 0 1 625,112 V348 A12,12 0 0 1 613,360 H72 A12,12 0 0 1 60,348 V112 A12,12 0 0 1 72,100 Z" />
+    <path fill="#D12B1F" d="M63,100 H622 A3,3 0 0 1 625,103 V103 A3,3 0 0 1 622,106 H63 A3,3 0 0 1 60,103 V103 A3,3 0 0 1 63,100 Z" />
+    <circle cx="115" cy="160" r="30" fill="#D12B1F" fill-opacity="0.1" />
+    
+  <g transform="translate(99.0, 144.0) scale(2.0)" fill="#D12B1F">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5.5C16 8.53757 13.5376 11 10.5 11H7V13H5V15L4 16H0V12L5.16351 6.83649C5.0567 6.40863 5 5.96094 5 5.5C5 2.46243 7.46243 0 10.5 0C13.5376 0 16 2.46243 16 5.5ZM13 4C13 4.55228 12.5523 5 12 5C11.4477 5 11 4.55228 11 4C11 3.44772 11.4477 3 12 3C12.5523 3 13 3.44772 13 4Z" />
+  </g>
+    <text x="160" y="155" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D12B1F">Key-Value Store</text>
+    <text x="160" y="178" font-family="Arial, sans-serif" font-size="13" fill="#D12B1F" font-weight="bold">Redis thuộc loại này</text>
+    <rect x="90" y="200" width="510" height="2" fill="#E2E8F0" />
+    <text x="90" y="230" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Đơn giản nhất, hiệu quả nhất. Dữ liệu = Key → Value.</text>
+    <text x="90" y="255" font-family="Arial, sans-serif" font-size="14" fill="#718096">VD: Redis, DynamoDB, Riak, Memcached</text>
+    <text x="90" y="280" font-family="Arial, sans-serif" font-size="14" fill="#718096">Ứng dụng: Cache, Session, Shopping Cart</text>
+    <path fill="#D12B1F" fill-opacity="0.1" d="M103,310 H157 A13,13 0 0 1 170,323 V323 A13,13 0 0 1 157,336 H103 A13,13 0 0 1 90,323 V323 A13,13 0 0 1 103,310 Z" />
+    <text x="130" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#D12B1F">Redis</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M667,100 H1208 A12,12 0 0 1 1220,112 V348 A12,12 0 0 1 1208,360 H667 A12,12 0 0 1 655,348 V112 A12,12 0 0 1 667,100 Z" />
+    <path fill="#0B4DA2" d="M658,100 H1217 A3,3 0 0 1 1220,103 V103 A3,3 0 0 1 1217,106 H658 A3,3 0 0 1 655,103 V103 A3,3 0 0 1 658,100 Z" />
+    <circle cx="710" cy="160" r="30" fill="#0B4DA2" fill-opacity="0.1" />
+    
+  <g transform="translate(694.0, 144.0) scale(2.0)" fill="#0B4DA2">
+    <path d="M14 0H2V4H14V0Z" />
+    <path d="M2 6H7V10H2V6Z" />
+    <path d="M2 12H7V16H2V12Z" />
+    <path d="M9 12H14V16H9V12Z" />
+    <path d="M14 6H9V10H14V6Z" />
+  </g>
+    <text x="755" y="155" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0B4DA2">Column-Store</text>
+    <text x="755" y="178" font-family="Arial, sans-serif" font-size="13" fill="#006AF9">Lưu trữ theo cột</text>
+    <rect x="685" y="200" width="510" height="2" fill="#E2E8F0" />
+    <text x="685" y="230" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Lưu dữ liệu theo cột thay vì hàng. Phù hợp OLAP.</text>
+    <text x="685" y="255" font-family="Arial, sans-serif" font-size="14" fill="#718096">VD: Cassandra, HBase, Google BigTable</text>
+    <text x="685" y="280" font-family="Arial, sans-serif" font-size="14" fill="#718096">Ứng dụng: Phân tích dữ liệu lớn, Data Warehouse</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M72,390 H613 A12,12 0 0 1 625,402 V638 A12,12 0 0 1 613,650 H72 A12,12 0 0 1 60,638 V402 A12,12 0 0 1 72,390 Z" />
+    <path fill="#006AF9" d="M63,390 H622 A3,3 0 0 1 625,393 V393 A3,3 0 0 1 622,396 H63 A3,3 0 0 1 60,393 V393 A3,3 0 0 1 63,390 Z" />
+    <circle cx="115" cy="450" r="30" fill="#006AF9" fill-opacity="0.1" />
+    
+  <g transform="translate(99.0, 434.0) scale(2.0)" fill="#006AF9">
+    <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z" />
+    <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z" />
+    <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z" />
+  </g>
+    <text x="160" y="445" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#006AF9">Document Database</text>
+    <text x="160" y="468" font-family="Arial, sans-serif" font-size="13" fill="#0B4DA2">Lưu trữ document</text>
+    <rect x="90" y="490" width="510" height="2" fill="#E2E8F0" />
+    <text x="90" y="520" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Lưu dữ liệu dạng JSON, XML, YAML. Truy vấn linh hoạt.</text>
+    <text x="90" y="545" font-family="Arial, sans-serif" font-size="14" fill="#718096">VD: MongoDB, CouchDB, Microsoft DocumentDB</text>
+    <text x="90" y="570" font-family="Arial, sans-serif" font-size="14" fill="#718096">Ứng dụng: CMS, E-commerce, Mobile apps</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M667,390 H1208 A12,12 0 0 1 1220,402 V638 A12,12 0 0 1 1208,650 H667 A12,12 0 0 1 655,638 V402 A12,12 0 0 1 667,390 Z" />
+    <path fill="#2E7D32" d="M658,390 H1217 A3,3 0 0 1 1220,393 V393 A3,3 0 0 1 1217,396 H658 A3,3 0 0 1 655,393 V393 A3,3 0 0 1 658,390 Z" />
+    <circle cx="710" cy="450" r="30" fill="#2E7D32" fill-opacity="0.1" />
+    
+  <g transform="translate(694.0, 434.0) scale(2.0)" fill="#2E7D32">
+    <path d="M1.51967 3.30803C0.748393 4.37143 0.232465 5.63209 0.0618896 7L15.9381 7C15.7675 5.63208 15.2516 4.37142 14.4803 3.30801C14.4387 3.3313 14.3965 3.3546 14.3538 3.3779C12.8684 4.1881 10.7045 5 7.99997 5C5.29547 5 3.13149 4.1881 1.64611 3.3779C1.60342 3.35461 1.56127 3.33131 1.51967 3.30803Z" />
+    <path d="M13.0562 1.80011C11.8114 2.42548 10.0975 3 7.99997 3C5.90247 3 4.18861 2.42549 2.94376 1.80013C4.32185 0.674887 6.08211 0 8 0C9.91787 0 11.6781 0.674881 13.0562 1.80011Z" />
+    <path d="M0.0618896 9C0.232466 10.3679 0.748398 11.6286 1.51968 12.692C1.56128 12.6687 1.60344 12.6454 1.64614 12.6221C3.13152 11.8119 5.2955 11 8 11C10.7045 11 12.8685 11.8119 14.3538 12.6221C14.3966 12.6454 14.4387 12.6687 14.4803 12.692C15.2516 11.6286 15.7675 10.3679 15.9381 9L0.0618896 9Z" />
+    <path d="M8 16C6.08212 16 4.32186 15.3251 2.94377 14.1999C4.18862 13.5745 5.90249 13 8 13C10.0975 13 11.8114 13.5745 13.0562 14.1999C11.6781 15.3251 9.91788 16 8 16Z" />
+  </g>
+    <text x="755" y="445" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32">Graph Database</text>
+    <text x="755" y="468" font-family="Arial, sans-serif" font-size="13" fill="#006AF9">Cơ sở dữ liệu đồ thị</text>
+    <rect x="685" y="490" width="510" height="2" fill="#E2E8F0" />
+    <text x="685" y="520" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Lưu Node (thực thể) và Edge (quan hệ).</text>
+    <text x="685" y="545" font-family="Arial, sans-serif" font-size="14" fill="#718096">VD: Neo4J, InfiniteGraph, OrientDB</text>
+    <text x="685" y="570" font-family="Arial, sans-serif" font-size="14" fill="#718096">Ứng dụng: Mạng xã hội, Recommendation</text>
+  </g>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">12 / 25</text>
+</svg>

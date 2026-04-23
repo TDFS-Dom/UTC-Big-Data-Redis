@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.5 BASE Properties</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#D12B1F"/>
+  <text x="60" y="95" font-family="Arial, sans-serif" font-size="16" fill="#718096">Mô hình thiết kế CSDL đối lập với ACID — NoSQL (Redis) tuân theo BASE</text>
+
+  <!-- BA Card -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="120" width="370" height="480" rx="12" fill="#FFFFFF"/>
+    <rect x="60" y="120" width="370" height="8" rx="4" fill="#0B4DA2"/>
+    <circle cx="245" cy="195" r="40" fill="#0B4DA2" fill-opacity="0.1"/>
+    <text x="245" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">BA</text>
+    <text x="245" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0B4DA2">Basically Available</text>
+    <text x="245" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#D12B1F">Cơ bản khả dụng</text>
+    <rect x="90" y="310" width="310" height="2" fill="#E2E8F0"/>
+    <text x="100" y="345" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Hệ thống luôn sẵn sàng</text>
+    <text x="100" y="370" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">phục vụ dù có lỗi xảy ra.</text>
+    <rect x="90" y="400" width="310" height="60" rx="8" fill="#E5F4F9"/>
+    <use data-icon="chunk/database" x="100" y="415" width="28" height="28" fill="#D12B1F"/>
+    <text x="140" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">Redis:</text>
+    <text x="140" y="448" font-family="Arial, sans-serif" font-size="13" fill="#718096">Sentinel tự động failover</text>
+  </g>
+
+  <!-- S Card -->
+  <g filter="url(#shadow)">
+    <rect x="455" y="120" width="370" height="480" rx="12" fill="#FFFFFF"/>
+    <rect x="455" y="120" width="370" height="8" rx="4" fill="#D12B1F"/>
+    <circle cx="640" cy="195" r="40" fill="#D12B1F" fill-opacity="0.1"/>
+    <text x="640" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">S</text>
+    <text x="640" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D12B1F">Soft State</text>
+    <text x="640" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0B4DA2">Trạng thái mềm</text>
+    <rect x="485" y="310" width="310" height="2" fill="#E2E8F0"/>
+    <text x="495" y="345" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Dữ liệu có thể thay đổi</text>
+    <text x="495" y="370" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">theo thời gian (stale data).</text>
+    <rect x="485" y="400" width="310" height="60" rx="8" fill="#E5F4F9"/>
+    <use data-icon="chunk/database" x="495" y="415" width="28" height="28" fill="#D12B1F"/>
+    <text x="535" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">Redis:</text>
+    <text x="535" y="448" font-family="Arial, sans-serif" font-size="13" fill="#718096">Cluster có độ trễ đồng bộ</text>
+  </g>
+
+  <!-- E Card -->
+  <g filter="url(#shadow)">
+    <rect x="850" y="120" width="370" height="480" rx="12" fill="#FFFFFF"/>
+    <rect x="850" y="120" width="370" height="8" rx="4" fill="#2E7D32"/>
+    <circle cx="1035" cy="195" r="40" fill="#2E7D32" fill-opacity="0.1"/>
+    <text x="1035" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2E7D32">E</text>
+    <text x="1035" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">Eventual Consistency</text>
+    <text x="1035" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#006AF9">Nhất quán cuối cùng</text>
+    <rect x="880" y="310" width="310" height="2" fill="#E2E8F0"/>
+    <text x="890" y="345" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Dữ liệu sẽ nhất quán</text>
+    <text x="890" y="370" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">sau một khoảng thời gian.</text>
+    <rect x="880" y="400" width="310" height="60" rx="8" fill="#E5F4F9"/>
+    <use data-icon="chunk/database" x="890" y="415" width="28" height="28" fill="#D12B1F"/>
+    <text x="930" y="428" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">Redis:</text>
+    <text x="930" y="448" font-family="Arial, sans-serif" font-size="13" fill="#718096">Async replication</text>
+  </g>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">09 / 25</text>
+</svg>

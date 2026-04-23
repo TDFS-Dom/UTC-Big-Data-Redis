@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.2 Tại sao cần NoSQL?</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M72,100 H608 A12,12 0 0 1 620,112 V608 A12,12 0 0 1 608,620 H72 A12,12 0 0 1 60,608 V112 A12,12 0 0 1 72,100 Z" />
+    <path fill="#C62828" d="M72,100 H608 A12,12 0 0 1 620,112 V138 A12,12 0 0 1 608,150 H72 A12,12 0 0 1 60,138 V112 A12,12 0 0 1 72,100 Z" />
+    <rect x="60" y="138" width="560" height="12" fill="#C62828" />
+    <text x="340" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Hạn chế của RDBMS</text>
+  </g>
+  <g>
+    <circle cx="110" cy="190" r="16" fill="#C62828" fill-opacity="0.1" /><text x="110" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="195" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Chỉ hỗ trợ dữ liệu có cấu trúc</text>
+  </g>
+  <g>
+    <circle cx="110" cy="240" r="16" fill="#C62828" fill-opacity="0.1" /><text x="110" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="245" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Khó xử lý dữ liệu phi cấu trúc</text>
+  </g>
+  <g>
+    <circle cx="110" cy="290" r="16" fill="#C62828" fill-opacity="0.1" /><text x="110" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="295" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Mở rộng dọc (Vertical) đắt đỏ</text>
+  </g>
+  <g>
+    <circle cx="110" cy="340" r="16" fill="#C62828" fill-opacity="0.1" /><text x="110" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="345" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Schema cứng nhắc, khó thay đổi</text>
+  </g>
+  <g>
+    <circle cx="110" cy="390" r="16" fill="#C62828" fill-opacity="0.1" /><text x="110" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C62828">✕</text>
+    <text x="140" y="395" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Không phù hợp Big Data</text>
+  </g>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M672,100 H1208 A12,12 0 0 1 1220,112 V608 A12,12 0 0 1 1208,620 H672 A12,12 0 0 1 660,608 V112 A12,12 0 0 1 672,100 Z" />
+    <path fill="#2E7D32" d="M672,100 H1208 A12,12 0 0 1 1220,112 V138 A12,12 0 0 1 1208,150 H672 A12,12 0 0 1 660,138 V112 A12,12 0 0 1 672,100 Z" />
+    <rect x="660" y="138" width="560" height="12" fill="#2E7D32" />
+    <text x="940" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Ưu điểm NoSQL &amp; Redis</text>
+  </g>
+  <g>
+    <circle cx="710" cy="190" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="710" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+    <text x="740" y="195" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Hỗ trợ mọi loại dữ liệu</text>
+  </g>
+  <g>
+    <circle cx="710" cy="240" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="710" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+    <text x="740" y="245" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Mở rộng ngang trên phần cứng rẻ</text>
+  </g>
+  <g>
+    <circle cx="710" cy="290" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="710" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+    <text x="740" y="295" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Schemaless — linh hoạt tối đa</text>
+  </g>
+  <g>
+    <circle cx="710" cy="340" r="16" fill="#2E7D32" fill-opacity="0.1" /><text x="710" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">✓</text>
+    <text x="740" y="345" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Phù hợp Big Data &amp; Real-time</text>
+  </g>
+
+  
+  <path fill="#D12B1F" fill-opacity="0.06" stroke="#D12B1F" stroke-width="1.5" stroke-opacity="0.3" d="M702,400 H1178 A12,12 0 0 1 1190,412 V578 A12,12 0 0 1 1178,590 H702 A12,12 0 0 1 690,578 V412 A12,12 0 0 1 702,400 Z" />
+  <text x="710" y="435" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#D12B1F">Tại sao chọn Redis?</text>
+  
+  <g transform="translate(710.0, 455.0) scale(1.5)" fill="#D12B1F">
+    <path d="M8 0C10.2091 0 12 1.79086 12 4V5C14.2091 5 16 6.79086 16 9H0V8C0 5.79086 1.79086 4 4 4C4 1.79086 5.79086 0 8 0Z" />
+    <path d="M11 11L8 16H6L7 13H4L4.5 11H11Z" />
+  </g>
+  <text x="745" y="475" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tốc độ cực nhanh — In-memory (RAM)</text>
+  
+  <g transform="translate(710.0, 490.0) scale(1.5)" fill="#D12B1F">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 3V8.41421L10.2929 11.7071L11.7071 10.2929L9 7.58579V3H7Z" />
+  </g>
+  <text x="745" y="510" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Độ trễ thấp — micro giây</text>
+  
+  <g transform="translate(710.0, 525.0) scale(1.5)" fill="#D12B1F">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1H1V7H7V1ZM7 9H1V15H7V9ZM9 1H15V7H9V1ZM15 9H9V15H15V9Z" />
+  </g>
+  <text x="745" y="545" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Đa dụng — Cache, Session, Pub/Sub</text>
+  
+  <g transform="translate(710.0, 560.0) scale(1.5)" fill="#D12B1F">
+    <path d="M1 5V3L8 0L15 3V5L8 8L1 5Z" />
+    <path d="M8 16L1 13V11L8 14L15 11V13L8 16Z" />
+    <path d="M1 9L8 12L15 9V7L8 10L1 7V9Z" />
+  </g>
+  <text x="745" y="580" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">5 kiểu dữ liệu phong phú</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">04 / 25</text>
+</svg>

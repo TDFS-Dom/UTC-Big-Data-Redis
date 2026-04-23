@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.4 ACID Properties</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#D12B1F"/>
+  <text x="60" y="95" font-family="Arial, sans-serif" font-size="16" fill="#718096">Tập hợp các tính chất đảm bảo độ tin cậy của giao dịch trong CSDL</text>
+
+  <!-- A Card -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="120" width="565" height="250" rx="12" fill="#FFFFFF"/>
+    <circle cx="115" cy="175" r="32" fill="#0B4DA2"/>
+    <text x="115" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">A</text>
+    <text x="165" y="170" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#0B4DA2">Atomicity</text>
+    <text x="165" y="195" font-family="Arial, sans-serif" font-size="16" fill="#D12B1F">Tính nguyên tử</text>
+    <rect x="90" y="215" width="510" height="2" fill="#E2E8F0"/>
+    <text x="90" y="250" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Tất cả thực hiện hoặc không gì cả</text>
+    <text x="90" y="278" font-family="Arial, sans-serif" font-size="15" fill="#718096">Không có trạng thái trung gian.</text>
+    <text x="90" y="303" font-family="Arial, sans-serif" font-size="15" fill="#718096">Thất bại → rollback toàn bộ.</text>
+  </g>
+
+  <!-- C Card -->
+  <g filter="url(#shadow)">
+    <rect x="655" y="120" width="565" height="250" rx="12" fill="#FFFFFF"/>
+    <circle cx="710" cy="175" r="32" fill="#D12B1F"/>
+    <text x="710" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">C</text>
+    <text x="760" y="170" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#D12B1F">Consistency</text>
+    <text x="760" y="195" font-family="Arial, sans-serif" font-size="16" fill="#0B4DA2">Tính nhất quán</text>
+    <rect x="685" y="215" width="510" height="2" fill="#E2E8F0"/>
+    <text x="685" y="250" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">CSDL nhất quán trước và sau giao dịch</text>
+    <text x="685" y="278" font-family="Arial, sans-serif" font-size="15" fill="#718096">Ràng buộc toàn vẹn luôn được duy trì.</text>
+    <text x="685" y="303" font-family="Arial, sans-serif" font-size="15" fill="#718096">VD: Cập nhật float bằng varchar → từ chối.</text>
+  </g>
+
+  <!-- I Card -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="400" width="565" height="250" rx="12" fill="#FFFFFF"/>
+    <circle cx="115" cy="455" r="32" fill="#006AF9"/>
+    <text x="115" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">I</text>
+    <text x="165" y="450" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#006AF9">Isolation</text>
+    <text x="165" y="475" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">Tính cô lập</text>
+    <rect x="90" y="495" width="510" height="2" fill="#E2E8F0"/>
+    <text x="90" y="530" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Giao dịch đồng thời không ảnh hưởng nhau</text>
+    <text x="90" y="558" font-family="Arial, sans-serif" font-size="15" fill="#718096">2 user cập nhật cùng bản ghi → cô lập.</text>
+    <text x="90" y="583" font-family="Arial, sans-serif" font-size="15" fill="#718096">Không ghi đè lẫn nhau.</text>
+  </g>
+
+  <!-- D Card -->
+  <g filter="url(#shadow)">
+    <rect x="655" y="400" width="565" height="250" rx="12" fill="#FFFFFF"/>
+    <circle cx="710" cy="455" r="32" fill="#2E7D32"/>
+    <text x="710" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">D</text>
+    <text x="760" y="450" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2E7D32">Durability</text>
+    <text x="760" y="475" font-family="Arial, sans-serif" font-size="16" fill="#006AF9">Tính bền vững</text>
+    <rect x="685" y="495" width="510" height="2" fill="#E2E8F0"/>
+    <text x="685" y="530" font-family="Arial, sans-serif" font-size="17" fill="#2D3748">Dữ liệu được lưu vĩnh viễn sau commit</text>
+    <text x="685" y="558" font-family="Arial, sans-serif" font-size="15" fill="#718096">Dù hệ thống crash → dữ liệu vẫn bảo toàn.</text>
+    <text x="685" y="583" font-family="Arial, sans-serif" font-size="15" fill="#718096">Ghi vào disk trước khi xác nhận.</text>
+  </g>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">07 / 25</text>
+</svg>

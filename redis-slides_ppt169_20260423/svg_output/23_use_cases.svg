@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="6" fill="#D12B1F"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">3 Use Cases thực tế của Redis</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#0B4DA2"/>
+
+  <!-- UC 1: Session -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="100" width="370" height="530" rx="12" fill="#FFFFFF"/>
+    <rect x="60" y="100" width="370" height="55" rx="12" fill="#D12B1F"/><rect x="60" y="143" width="370" height="12" fill="#D12B1F"/>
+    <use data-icon="chunk/lock-closed" x="80" y="115" width="24" height="24" fill="#FFFFFF"/>
+    <text x="115" y="135" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Session Store</text>
+  </g>
+  <text x="90" y="190" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Lưu session khi user đăng nhập</text>
+  <text x="90" y="215" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tự động hết hạn sau 30 phút</text>
+  <rect x="90" y="240" width="310" height="120" rx="8" fill="#1E293B"/>
+  <text x="105" y="268" font-family="Consolas, monospace" font-size="12" fill="#E2E8F0">SET session:abc123</text>
+  <text x="115" y="288" font-family="Consolas, monospace" font-size="12" fill="#FF6B35">'{"user_id":1,</text>
+  <text x="120" y="308" font-family="Consolas, monospace" font-size="12" fill="#FF6B35">"name":"Admin"}'</text>
+  <text x="115" y="328" font-family="Consolas, monospace" font-size="12" fill="#E2E8F0">EX 1800</text>
+  <text x="105" y="348" font-family="Consolas, monospace" font-size="12" fill="#2E7D32">OK</text>
+
+  <!-- UC 2: Rate Limiting -->
+  <g filter="url(#shadow)">
+    <rect x="455" y="100" width="370" height="530" rx="12" fill="#FFFFFF"/>
+    <rect x="455" y="100" width="370" height="55" rx="12" fill="#0B4DA2"/><rect x="455" y="143" width="370" height="12" fill="#0B4DA2"/>
+    <use data-icon="chunk/shield-check" x="475" y="115" width="24" height="24" fill="#FFFFFF"/>
+    <text x="510" y="135" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Rate Limiting</text>
+  </g>
+  <text x="485" y="190" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Giới hạn request API</text>
+  <text x="485" y="215" font-family="Arial, sans-serif" font-size="14" fill="#718096">Max 100 req/phút mỗi user</text>
+  <rect x="485" y="240" width="310" height="100" rx="8" fill="#1E293B"/>
+  <text x="500" y="268" font-family="Consolas, monospace" font-size="12" fill="#E2E8F0">INCR rate:user1</text>
+  <text x="500" y="288" font-family="Consolas, monospace" font-size="12" fill="#E2E8F0">EXPIRE rate:user1 60</text>
+  <text x="500" y="318" font-family="Consolas, monospace" font-size="12" fill="#718096"># Nếu GET > 100 → reject</text>
+
+  <!-- UC 3: Cache -->
+  <g filter="url(#shadow)">
+    <rect x="850" y="100" width="370" height="530" rx="12" fill="#FFFFFF"/>
+    <rect x="850" y="100" width="370" height="55" rx="12" fill="#2E7D32"/><rect x="850" y="143" width="370" height="12" fill="#2E7D32"/>
+    <use data-icon="chunk/cloud-lightning" x="870" y="115" width="24" height="24" fill="#FFFFFF"/>
+    <text x="905" y="135" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Cache Query</text>
+  </g>
+  <text x="880" y="190" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Cache kết quả database query</text>
+  <text x="880" y="215" font-family="Arial, sans-serif" font-size="14" fill="#718096">Giảm tải DB, tăng tốc response</text>
+  <rect x="880" y="240" width="310" height="140" rx="8" fill="#1E293B"/>
+  <text x="895" y="268" font-family="Consolas, monospace" font-size="12" fill="#718096"># Check cache trước</text>
+  <text x="895" y="288" font-family="Consolas, monospace" font-size="12" fill="#E2E8F0">GET cache:products</text>
+  <text x="895" y="308" font-family="Consolas, monospace" font-size="12" fill="#FF6B35">(nil) → query DB</text>
+  <text x="895" y="338" font-family="Consolas, monospace" font-size="12" fill="#718096"># Lưu vào cache 5 phút</text>
+  <text x="895" y="358" font-family="Consolas, monospace" font-size="12" fill="#E2E8F0">SET cache:products</text>
+  <text x="915" y="375" font-family="Consolas, monospace" font-size="12" fill="#E2E8F0">'[...]' EX 300</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">23 / 25</text>
+</svg>

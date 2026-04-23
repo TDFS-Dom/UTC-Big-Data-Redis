@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" /><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" /><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" /><feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF" /><rect x="0" y="0" width="1280" height="6" fill="#D12B1F" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">Tổng kết các lệnh Redis quan trọng</text>
+  <path fill="#0B4DA2" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  <g filter="url(#shadow)"><path fill="#FFFFFF" d="M72,90 H1208 A12,12 0 0 1 1220,102 V638 A12,12 0 0 1 1208,650 H72 A12,12 0 0 1 60,638 V102 A12,12 0 0 1 72,90 Z" /></g>
+  
+  <path fill="#0B4DA2" d="M72,90 H1208 A12,12 0 0 1 1220,102 V123 A12,12 0 0 1 1208,135 H72 A12,12 0 0 1 60,123 V102 A12,12 0 0 1 72,90 Z" /><rect x="60" y="123" width="1160" height="12" fill="#0B4DA2" />
+  <text x="160" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">Nhóm</text>
+  <text x="480" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">Lệnh</text>
+  <text x="900" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">Chức năng</text>
+
+  
+  <path fill="#D12B1F" fill-opacity="0.08" d="M86,145 H234 A6,6 0 0 1 240,151 V187 A6,6 0 0 1 234,193 H86 A6,6 0 0 1 80,187 V151 A6,6 0 0 1 86,145 Z" /><text x="160" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">String</text>
+  <text x="480" y="175" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">SET, GET, INCR, DECR, MSET, MGET</text>
+  <text x="900" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Lưu/đọc chuỗi và số</text>
+
+  <path fill="#0B4DA2" fill-opacity="0.08" d="M86,200 H234 A6,6 0 0 1 240,206 V242 A6,6 0 0 1 234,248 H86 A6,6 0 0 1 80,242 V206 A6,6 0 0 1 86,200 Z" /><text x="160" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0B4DA2">Hash</text>
+  <text x="480" y="230" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">HSET, HGET, HGETALL, HDEL, HINCRBY</text>
+  <text x="900" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Lưu/đọc object</text>
+
+  <path fill="#006AF9" fill-opacity="0.08" d="M86,255 H234 A6,6 0 0 1 240,261 V297 A6,6 0 0 1 234,303 H86 A6,6 0 0 1 80,297 V261 A6,6 0 0 1 86,255 Z" /><text x="160" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#006AF9">List</text>
+  <text x="480" y="285" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">LPUSH, RPUSH, LPOP, RPOP, LRANGE</text>
+  <text x="900" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Danh sách / Queue</text>
+
+  <path fill="#2E7D32" fill-opacity="0.08" d="M86,310 H234 A6,6 0 0 1 240,316 V352 A6,6 0 0 1 234,358 H86 A6,6 0 0 1 80,352 V316 A6,6 0 0 1 86,310 Z" /><text x="160" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">Set</text>
+  <text x="480" y="340" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">SADD, SMEMBERS, SINTER, SUNION, SDIFF</text>
+  <text x="900" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Tập hợp</text>
+
+  <path fill="#FF6B35" fill-opacity="0.08" d="M86,365 H234 A6,6 0 0 1 240,371 V407 A6,6 0 0 1 234,413 H86 A6,6 0 0 1 80,407 V371 A6,6 0 0 1 86,365 Z" /><text x="160" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF6B35">Sorted Set</text>
+  <text x="480" y="395" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">ZADD, ZREVRANGE, ZRANK, ZCOUNT</text>
+  <text x="900" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Ranking</text>
+
+  <path fill="#E5F4F9" d="M86,420 H234 A6,6 0 0 1 240,426 V462 A6,6 0 0 1 234,468 H86 A6,6 0 0 1 80,462 V426 A6,6 0 0 1 86,420 Z" /><text x="160" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0B4DA2">Key</text>
+  <text x="480" y="450" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">DEL, EXISTS, EXPIRE, TTL, TYPE, KEYS</text>
+  <text x="900" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Quản lý key</text>
+
+  <path fill="#F5F7FA" d="M86,475 H234 A6,6 0 0 1 240,481 V517 A6,6 0 0 1 234,523 H86 A6,6 0 0 1 80,517 V481 A6,6 0 0 1 86,475 Z" /><text x="160" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#006AF9">Pub/Sub</text>
+  <text x="480" y="505" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">SUBSCRIBE, PUBLISH, UNSUBSCRIBE</text>
+  <text x="900" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Messaging</text>
+
+  <path fill="#E5F4F9" d="M86,530 H234 A6,6 0 0 1 240,536 V572 A6,6 0 0 1 234,578 H86 A6,6 0 0 1 80,572 V536 A6,6 0 0 1 86,530 Z" /><text x="160" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">Transaction</text>
+  <text x="480" y="560" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">MULTI, EXEC, DISCARD, WATCH</text>
+  <text x="900" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Giao dịch</text>
+
+  <path fill="#F5F7FA" d="M86,585 H234 A6,6 0 0 1 240,591 V627 A6,6 0 0 1 234,633 H86 A6,6 0 0 1 80,627 V591 A6,6 0 0 1 86,585 Z" /><text x="160" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0B4DA2">Server</text>
+  <text x="480" y="615" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#2D3748">PING, INFO, DBSIZE, FLUSHDB</text>
+  <text x="900" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Quản lý server</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">24 / 25</text>
+</svg>

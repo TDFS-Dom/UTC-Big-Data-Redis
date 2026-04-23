@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="coverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B4DA2" /><stop offset="100%" stop-color="#071F4A" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#coverGrad)" />
+  <circle cx="1100" cy="150" r="200" fill="#006AF9" fill-opacity="0.08" />
+  <circle cx="180" cy="600" r="160" fill="#D12B1F" fill-opacity="0.06" />
+
+  <text x="640" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#FFFFFF">Câu hỏi ôn tập</text>
+  <path fill="#D12B1F" d="M561.50,165 H718.50 A1.50,1.50 0 0 1 720,166.50 V166.50 A1.50,1.50 0 0 1 718.50,168 H561.50 A1.50,1.50 0 0 1 560,166.50 V166.50 A1.50,1.50 0 0 1 561.50,165 Z" />
+
+  <path fill="#FFFFFF" fill-opacity="0.08" d="M216,200 H1064 A16,16 0 0 1 1080,216 V494 A16,16 0 0 1 1064,510 H216 A16,16 0 0 1 200,494 V216 A16,16 0 0 1 216,200 Z" />
+  <text x="260" y="245" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.9">1. NoSQL database là gì? Kể tên 4 loại NoSQL database.</text>
+  <text x="260" y="285" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.9">2. Redis thuộc loại NoSQL nào? Thuộc nhóm nào trong CAP?</text>
+  <text x="260" y="325" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.9">3. Trình bày 3 tính chất của CAP Theorem.</text>
+  <text x="260" y="365" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.9">4. So sánh ACID và BASE. Cho ví dụ.</text>
+  <text x="260" y="405" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.9">5. Kể tên 5 kiểu dữ liệu trong Redis và ứng dụng.</text>
+  <text x="260" y="445" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.9">6. Khi nào nên dùng Redis thay vì RDBMS? Cho 3 ví dụ.</text>
+  <text x="260" y="485" font-family="Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.9">7. Viết lệnh Redis tạo bảng xếp hạng sinh viên.</text>
+
+  <text x="640" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Cảm ơn!</text>
+  <text x="640" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF" fill-opacity="0.6">Q &amp; A</text>
+
+  <text x="640" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF" fill-opacity="0.4">ĐH Giao thông Vận tải (UTC) — Cao học Big Data — 2026</text>
+</svg>

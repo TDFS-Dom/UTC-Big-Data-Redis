@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" /><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" /><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" /><feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF" /><rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">GUI Tools &amp; Cấu hình cơ bản</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <g filter="url(#shadow)"><path fill="#FFFFFF" d="M72,100 H608 A12,12 0 0 1 620,112 V618 A12,12 0 0 1 608,630 H72 A12,12 0 0 1 60,618 V112 A12,12 0 0 1 72,100 Z" />
+  <path fill="#006AF9" d="M72,100 H608 A12,12 0 0 1 620,112 V138 A12,12 0 0 1 608,150 H72 A12,12 0 0 1 60,138 V112 A12,12 0 0 1 72,100 Z" /><rect x="60" y="138" width="560" height="12" fill="#006AF9" />
+  <text x="340" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">GUI Tools</text></g>
+  <path fill="#E5F4F9" d="M100,170 H580 A10,10 0 0 1 590,180 V280 A10,10 0 0 1 580,290 H100 A10,10 0 0 1 90,280 V180 A10,10 0 0 1 100,170 Z" />
+  
+  <g transform="translate(110.0, 195.0) scale(2.25)" fill="#D12B1F">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1H1V7H7V1ZM7 9H1V15H7V9ZM9 1H15V7H9V1ZM15 9H9V15H15V9Z" />
+  </g>
+  <text x="160" y="210" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#D12B1F">RedisInsight</text>
+  <text x="160" y="235" font-family="Arial, sans-serif" font-size="14" fill="#2D3748">Công cụ chính thức của Redis — Miễn phí</text>
+  <text x="160" y="258" font-family="Arial, sans-serif" font-size="14" fill="#718096">Giao diện trực quan, hỗ trợ tất cả kiểu dữ liệu</text>
+  <text x="160" y="278" font-family="Consolas, monospace" font-size="13" fill="#006AF9">redis.io/insight/</text>
+
+  <path fill="#F5F7FA" d="M100,310 H580 A10,10 0 0 1 590,320 V400 A10,10 0 0 1 580,410 H100 A10,10 0 0 1 90,400 V320 A10,10 0 0 1 100,310 Z" />
+  
+  <g transform="translate(110.0, 335.0) scale(2.25)" fill="#0B4DA2">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1H1V7H7V1ZM7 9H1V15H7V9ZM9 1H15V7H9V1ZM15 9H9V15H15V9Z" />
+  </g>
+  <text x="160" y="350" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0B4DA2">Another Redis Desktop Manager</text>
+  <text x="160" y="375" font-family="Arial, sans-serif" font-size="14" fill="#2D3748">Miễn phí — Windows, macOS, Linux</text>
+  <text x="160" y="398" font-family="Consolas, monospace" font-size="13" fill="#006AF9">github.com/qishibo/AnotherRedisDesktopManager</text>
+
+  <path fill="#E5F4F9" d="M100,430 H580 A10,10 0 0 1 590,440 V480 A10,10 0 0 1 580,490 H100 A10,10 0 0 1 90,480 V440 A10,10 0 0 1 100,430 Z" />
+  <text x="110" y="458" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#0B4DA2">Kết nối:</text>
+  <text x="200" y="458" font-family="Consolas, monospace" font-size="14" fill="#2D3748">Host: localhost  |  Port: 6379</text>
+  <text x="110" y="480" font-family="Consolas, monospace" font-size="14" fill="#718096">Password: (nếu có)</text>
+
+  
+  <g filter="url(#shadow)"><path fill="#FFFFFF" d="M672,100 H1208 A12,12 0 0 1 1220,112 V618 A12,12 0 0 1 1208,630 H672 A12,12 0 0 1 660,618 V112 A12,12 0 0 1 672,100 Z" />
+  <path fill="#D12B1F" d="M672,100 H1208 A12,12 0 0 1 1220,112 V138 A12,12 0 0 1 1208,150 H672 A12,12 0 0 1 660,138 V112 A12,12 0 0 1 672,100 Z" /><rect x="660" y="138" width="560" height="12" fill="#D12B1F" />
+  <text x="940" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">redis.conf</text></g>
+  <path fill="#1E293B" d="M698,170 H1182 A8,8 0 0 1 1190,178 V542 A8,8 0 0 1 1182,550 H698 A8,8 0 0 1 690,542 V178 A8,8 0 0 1 698,170 Z" />
+  <text x="705" y="198" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Port mặc định</text>
+  <text x="705" y="218" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">port 6379</text>
+  <text x="705" y="248" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Chỉ localhost</text>
+  <text x="705" y="268" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">bind 127.0.0.1</text>
+  <text x="705" y="298" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Mật khẩu</text>
+  <text x="705" y="318" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">requirepass <tspan fill="#FF6B35">yourpass</tspan></text>
+  <text x="705" y="348" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Giới hạn RAM</text>
+  <text x="705" y="368" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">maxmemory <tspan fill="#FF6B35">256mb</tspan></text>
+  <text x="705" y="398" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># Persistence</text>
+  <text x="705" y="418" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">save 900 1</text>
+  <text x="705" y="438" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">save 300 10</text>
+  <text x="705" y="468" font-family="Consolas, monospace" font-size="13" fill="#2E7D32"># AOF</text>
+  <text x="705" y="488" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">appendonly <tspan fill="#FF6B35">yes</tspan></text>
+  <text x="705" y="508" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">appendfsync <tspan fill="#FF6B35">everysec</tspan></text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">16 / 25</text>
+</svg>

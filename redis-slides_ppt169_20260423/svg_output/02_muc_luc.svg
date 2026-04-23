@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2"/>
+
+  <!-- Tiêu đề -->
+  <text x="640" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#0B4DA2">Nội dung trình bày</text>
+  <rect x="570" y="78" width="140" height="3" rx="1.5" fill="#D12B1F"/>
+
+  <!-- Card 1 -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="120" width="560" height="250" rx="12" fill="#FFFFFF"/>
+    <rect x="60" y="120" width="8" height="250" rx="4" fill="#0B4DA2"/>
+    <circle cx="110" cy="170" r="28" fill="#0B4DA2" fill-opacity="0.1"/>
+    <text x="110" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0B4DA2">1</text>
+    <text x="155" y="178" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2D3748">Lý thuyết 3.1 — 3.4</text>
+    <text x="90" y="215" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Giới thiệu NoSQL</text>
+    <text x="90" y="243" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Tại sao cần NoSQL?</text>
+    <text x="90" y="271" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Định lý CAP (CAP Theorem)</text>
+    <text x="90" y="299" font-family="Arial, sans-serif" font-size="16" fill="#718096">• ACID Properties</text>
+    <use data-icon="chunk/database" x="530" y="210" width="48" height="48" fill="#0B4DA2" fill-opacity="0.15"/>
+  </g>
+
+  <!-- Card 2 -->
+  <g filter="url(#shadow)">
+    <rect x="660" y="120" width="560" height="250" rx="12" fill="#FFFFFF"/>
+    <rect x="660" y="120" width="8" height="250" rx="4" fill="#D12B1F"/>
+    <circle cx="710" cy="170" r="28" fill="#D12B1F" fill-opacity="0.1"/>
+    <text x="710" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#D12B1F">2</text>
+    <text x="755" y="178" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2D3748">Lý thuyết 3.5 — 3.8</text>
+    <text x="690" y="215" font-family="Arial, sans-serif" font-size="16" fill="#718096">• BASE Properties</text>
+    <text x="690" y="243" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Schemaless Databases</text>
+    <text x="690" y="271" font-family="Arial, sans-serif" font-size="16" fill="#718096">• NoSQL vs RDBMS</text>
+    <text x="690" y="299" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Chuyển đổi RDBMS → NoSQL</text>
+    <use data-icon="chunk/layers" x="1130" y="210" width="48" height="48" fill="#D12B1F" fill-opacity="0.15"/>
+  </g>
+
+  <!-- Card 3 -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="400" width="560" height="250" rx="12" fill="#FFFFFF"/>
+    <rect x="60" y="400" width="8" height="250" rx="4" fill="#006AF9"/>
+    <circle cx="110" cy="450" r="28" fill="#006AF9" fill-opacity="0.1"/>
+    <text x="110" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#006AF9">3</text>
+    <text x="155" y="458" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2D3748">Cài đặt phần mềm</text>
+    <text x="90" y="495" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Cài đặt Redis (Docker / WSL / Linux)</text>
+    <text x="90" y="523" font-family="Arial, sans-serif" font-size="16" fill="#718096">• GUI Tools: RedisInsight</text>
+    <text x="90" y="551" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Cấu hình cơ bản redis.conf</text>
+    <text x="90" y="579" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Xử lý sự cố thường gặp</text>
+    <use data-icon="chunk/terminal" x="530" y="490" width="48" height="48" fill="#006AF9" fill-opacity="0.15"/>
+  </g>
+
+  <!-- Card 4 -->
+  <g filter="url(#shadow)">
+    <rect x="660" y="400" width="560" height="250" rx="12" fill="#FFFFFF"/>
+    <rect x="660" y="400" width="8" height="250" rx="4" fill="#2E7D32"/>
+    <circle cx="710" cy="450" r="28" fill="#2E7D32" fill-opacity="0.1"/>
+    <text x="710" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2E7D32">4</text>
+    <text x="755" y="458" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2D3748">Demo hướng dẫn</text>
+    <text x="690" y="495" font-family="Arial, sans-serif" font-size="16" fill="#718096">• 5 kiểu dữ liệu: String, Hash, List, Set, ZSet</text>
+    <text x="690" y="523" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Pub/Sub &amp; Transaction</text>
+    <text x="690" y="551" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Ứng dụng thực tế: Cache, Session, Rate Limit</text>
+    <text x="690" y="579" font-family="Arial, sans-serif" font-size="16" fill="#718096">• Tổng kết lệnh Redis</text>
+    <use data-icon="chunk/code" x="1130" y="490" width="48" height="48" fill="#2E7D32" fill-opacity="0.15"/>
+  </g>
+
+  <!-- Footer -->
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">02 / 25</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="6" fill="#D12B1F"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">Demo: Set &amp; Sorted Set</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#0B4DA2"/>
+
+  <!-- Set -->
+  <text x="60" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">Set — Tập hợp không trùng lặp</text>
+  <rect x="60" y="120" width="560" height="260" rx="10" fill="#1E293B"/>
+  <text x="80" y="148" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SADD post:1:tags "redis" "nosql" "big-data"</text>
+  <text x="80" y="170" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SADD post:2:tags "redis" "cache" "performance"</text>
+  <text x="80" y="200" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SMEMBERS post:1:tags</text>
+  <text x="80" y="222" font-family="Consolas, monospace" font-size="13" fill="#2E7D32">"redis" "nosql" "big-data"</text>
+  <text x="80" y="252" font-family="Consolas, monospace" font-size="13" fill="#718096"># Phép toán tập hợp</text>
+  <text x="80" y="274" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SINTER post:1 post:2  <tspan fill="#2E7D32">→ "redis"</tspan></text>
+  <text x="80" y="296" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SUNION post:1 post:2  <tspan fill="#2E7D32">→ tất cả tags</tspan></text>
+  <text x="80" y="318" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SDIFF  post:1 post:2  <tspan fill="#2E7D32">→ "nosql","big-data"</tspan></text>
+  <text x="80" y="348" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SISMEMBER post:1:tags "redis"  <tspan fill="#FF6B35">(integer) 1</tspan></text>
+  <text x="80" y="370" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">SCARD post:1:tags              <tspan fill="#FF6B35">(integer) 3</tspan></text>
+
+  <!-- Sorted Set -->
+  <text x="660" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF6B35">Sorted Set — Xếp hạng (Ranking)</text>
+  <rect x="660" y="120" width="560" height="260" rx="10" fill="#1E293B"/>
+  <text x="680" y="148" font-family="Consolas, monospace" font-size="13" fill="#718096"># Bảng xếp hạng điểm thi</text>
+  <text x="680" y="170" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">ZADD exam:scores 9.5 "Nguyen Van A"</text>
+  <text x="680" y="192" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">ZADD exam:scores 8.7 "Tran Thi B"</text>
+  <text x="680" y="214" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">ZADD exam:scores 9.8 "Le Van C"</text>
+  <text x="680" y="244" font-family="Consolas, monospace" font-size="13" fill="#718096"># Top 3 từ cao → thấp</text>
+  <text x="680" y="266" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">ZREVRANGE exam:scores 0 2 WITHSCORES</text>
+  <text x="680" y="288" font-family="Consolas, monospace" font-size="13" fill="#2E7D32">1) "Le Van C"       9.8</text>
+  <text x="680" y="308" font-family="Consolas, monospace" font-size="13" fill="#2E7D32">2) "Nguyen Van A"   9.5</text>
+  <text x="680" y="328" font-family="Consolas, monospace" font-size="13" fill="#2E7D32">3) "Tran Thi B"     8.7</text>
+  <text x="680" y="358" font-family="Consolas, monospace" font-size="13" fill="#E2E8F0">ZREVRANK exam:scores "Nguyen Van A"</text>
+  <text x="680" y="378" font-family="Consolas, monospace" font-size="13" fill="#FF6B35">(integer) 1  <tspan fill="#718096"># Hạng 2</tspan></text>
+
+  <!-- Summary -->
+  <rect x="60" y="410" width="560" height="50" rx="8" fill="#2E7D32" fill-opacity="0.05"/>
+  <text x="90" y="442" font-family="Consolas, monospace" font-size="14" fill="#2D3748">SADD | SMEMBERS | SINTER | SUNION | SDIFF | SCARD</text>
+  <rect x="660" y="410" width="560" height="50" rx="8" fill="#FF6B35" fill-opacity="0.05"/>
+  <text x="690" y="442" font-family="Consolas, monospace" font-size="14" fill="#2D3748">ZADD | ZREVRANGE | ZRANK | ZCOUNT | ZREVRANK</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">21 / 25</text>
+</svg>

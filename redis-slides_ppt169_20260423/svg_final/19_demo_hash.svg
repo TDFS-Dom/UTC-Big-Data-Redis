@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#FFFFFF" /><rect x="0" y="0" width="1280" height="6" fill="#D12B1F" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">Demo: Hash — HSET, HGET, HGETALL</text>
+  <path fill="#0B4DA2" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  <path fill="#1E293B" d="M70,95 H1210 A10,10 0 0 1 1220,105 V405 A10,10 0 0 1 1210,415 H70 A10,10 0 0 1 60,405 V105 A10,10 0 0 1 70,95 Z" />
+  <text x="80" y="125" font-family="Consolas, monospace" font-size="14" fill="#718096"># Tạo thông tin sinh viên (tương tự 1 row trong RDBMS)</text>
+  <text x="80" y="150" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">HSET student:101 name "Tran Van B" age 22 major "CNTT" gpa 3.5</text>
+  <text x="80" y="180" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">HGET student:101 name</text>
+  <text x="80" y="202" font-family="Consolas, monospace" font-size="14" fill="#2E7D32">"Tran Van B"</text>
+  <text x="80" y="232" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">HGETALL student:101</text>
+  <text x="80" y="254" font-family="Consolas, monospace" font-size="14" fill="#2E7D32">1) "name"    2) "Tran Van B"</text>
+  <text x="80" y="276" font-family="Consolas, monospace" font-size="14" fill="#2E7D32">3) "age"     4) "22"</text>
+  <text x="80" y="298" font-family="Consolas, monospace" font-size="14" fill="#2E7D32">5) "major"   6) "CNTT"</text>
+  <text x="80" y="320" font-family="Consolas, monospace" font-size="14" fill="#2E7D32">7) "gpa"     8) "3.5"</text>
+  <text x="80" y="355" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">HSET student:101 gpa 3.7     <tspan fill="#718096"># Cập nhật</tspan></text>
+  <text x="80" y="377" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">HDEL student:101 major       <tspan fill="#718096"># Xóa 1 trường</tspan></text>
+  <text x="80" y="405" font-family="Consolas, monospace" font-size="14" fill="#718096"># Ví dụ: Tăng tồn kho sản phẩm</text>
+  <text x="80" y="402" font-family="Consolas, monospace" font-size="1" fill="#1E293B">.</text>
+
+  
+  <path fill="#1E293B" d="M70,430 H1210 A10,10 0 0 1 1220,440 V520 A10,10 0 0 1 1210,530 H70 A10,10 0 0 1 60,520 V440 A10,10 0 0 1 70,430 Z" />
+  <text x="80" y="458" font-family="Consolas, monospace" font-size="14" fill="#718096"># Ví dụ thực tế: quản lý sản phẩm</text>
+  <text x="80" y="480" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">HSET product:1001 name "Laptop Dell" price 35000000 stock 50</text>
+  <text x="80" y="502" font-family="Consolas, monospace" font-size="14" fill="#E2E8F0">HINCRBY product:1001 stock 20     <tspan fill="#2E7D32">(integer) 70</tspan></text>
+
+  <path fill="#0B4DA2" fill-opacity="0.05" stroke="#0B4DA2" stroke-width="1" stroke-opacity="0.3" d="M70,555 H1210 A10,10 0 0 1 1220,565 V605 A10,10 0 0 1 1210,615 H70 A10,10 0 0 1 60,605 V565 A10,10 0 0 1 70,555 Z" />
+  <text x="90" y="590" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">Lệnh:</text>
+  <text x="155" y="590" font-family="Consolas, monospace" font-size="15" fill="#2D3748">HSET key field val  |  HGET key field  |  HGETALL key  |  HDEL key field  |  HINCRBY key field n</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">19 / 25</text>
+</svg>

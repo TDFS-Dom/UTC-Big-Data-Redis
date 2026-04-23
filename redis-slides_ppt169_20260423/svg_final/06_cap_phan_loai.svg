@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">Phân loại Database theo CAP</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M72,110 H418 A12,12 0 0 1 430,122 V598 A12,12 0 0 1 418,610 H72 A12,12 0 0 1 60,598 V122 A12,12 0 0 1 72,110 Z" />
+    <path fill="#0B4DA2" d="M72,110 H418 A12,12 0 0 1 430,122 V158 A12,12 0 0 1 418,170 H72 A12,12 0 0 1 60,158 V122 A12,12 0 0 1 72,110 Z" />
+    <rect x="60" y="158" width="370" height="12" fill="#0B4DA2" />
+    <text x="245" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">CA</text>
+  </g>
+  <text x="245" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">Consistency + Availability</text>
+  <text x="245" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Nhất quán + Khả dụng</text>
+  <rect x="100" y="260" width="290" height="2" fill="#E2E8F0" />
+  <text x="245" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Không chịu lỗi phân vùng</text>
+  <path fill="#E5F4F9" d="M128,330 H362 A8,8 0 0 1 370,338 V367 A8,8 0 0 1 362,375 H128 A8,8 0 0 1 120,367 V338 A8,8 0 0 1 128,330 Z" />
+  <text x="245" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">MySQL</text>
+  <path fill="#E5F4F9" d="M128,390 H362 A8,8 0 0 1 370,398 V427 A8,8 0 0 1 362,435 H128 A8,8 0 0 1 120,427 V398 A8,8 0 0 1 128,390 Z" />
+  <text x="245" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">PostgreSQL</text>
+  <path fill="#E5F4F9" d="M128,450 H362 A8,8 0 0 1 370,458 V487 A8,8 0 0 1 362,495 H128 A8,8 0 0 1 120,487 V458 A8,8 0 0 1 128,450 Z" />
+  <text x="245" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">Oracle</text>
+  <text x="245" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">→ RDBMS truyền thống</text>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M467,100 H813 A12,12 0 0 1 825,112 V608 A12,12 0 0 1 813,620 H467 A12,12 0 0 1 455,608 V112 A12,12 0 0 1 467,100 Z" />
+    <path fill="#D12B1F" d="M467,100 H813 A12,12 0 0 1 825,112 V153 A12,12 0 0 1 813,165 H467 A12,12 0 0 1 455,153 V112 A12,12 0 0 1 467,100 Z" />
+    <rect x="455" y="153" width="370" height="12" fill="#D12B1F" />
+    <text x="640" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">CP</text>
+  </g>
+  <path fill="#FF6B35" d="M476,95 H504 A11,11 0 0 1 515,106 V106 A11,11 0 0 1 504,117 H476 A11,11 0 0 1 465,106 V106 A11,11 0 0 1 476,95 Z" />
+  <text x="490" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Redis</text>
+  <text x="640" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Consistency + Partition Tol.</text>
+  <text x="640" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Nhất quán + Chịu lỗi phân vùng</text>
+  <rect x="495" y="255" width="290" height="2" fill="#E2E8F0" />
+  <text x="640" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Hy sinh một phần khả dụng</text>
+  <path fill="#D12B1F" fill-opacity="0.08" stroke="#D12B1F" stroke-width="1.5" d="M523,320 H757 A8,8 0 0 1 765,328 V357 A8,8 0 0 1 757,365 H523 A8,8 0 0 1 515,357 V328 A8,8 0 0 1 523,320 Z" />
+  <text x="640" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Redis</text>
+  <path fill="#E5F4F9" d="M523,380 H757 A8,8 0 0 1 765,388 V417 A8,8 0 0 1 757,425 H523 A8,8 0 0 1 515,417 V388 A8,8 0 0 1 523,380 Z" />
+  <text x="640" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">MongoDB</text>
+  <path fill="#E5F4F9" d="M523,440 H757 A8,8 0 0 1 765,448 V477 A8,8 0 0 1 757,485 H523 A8,8 0 0 1 515,477 V448 A8,8 0 0 1 523,440 Z" />
+  <text x="640" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">HBase</text>
+  <path fill="#E5F4F9" d="M523,500 H757 A8,8 0 0 1 765,508 V537 A8,8 0 0 1 757,545 H523 A8,8 0 0 1 515,537 V508 A8,8 0 0 1 523,500 Z" />
+  <text x="640" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">BigTable</text>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M862,110 H1208 A12,12 0 0 1 1220,122 V598 A12,12 0 0 1 1208,610 H862 A12,12 0 0 1 850,598 V122 A12,12 0 0 1 862,110 Z" />
+    <path fill="#2E7D32" d="M862,110 H1208 A12,12 0 0 1 1220,122 V158 A12,12 0 0 1 1208,170 H862 A12,12 0 0 1 850,158 V122 A12,12 0 0 1 862,110 Z" />
+    <rect x="850" y="158" width="370" height="12" fill="#2E7D32" />
+    <text x="1035" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">AP</text>
+  </g>
+  <text x="1035" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Availability + Partition Tol.</text>
+  <text x="1035" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Khả dụng + Chịu lỗi phân vùng</text>
+  <rect x="890" y="260" width="290" height="2" fill="#E2E8F0" />
+  <text x="1035" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Hy sinh tính nhất quán</text>
+  <path fill="#E5F4F9" d="M918,330 H1152 A8,8 0 0 1 1160,338 V367 A8,8 0 0 1 1152,375 H918 A8,8 0 0 1 910,367 V338 A8,8 0 0 1 918,330 Z" />
+  <text x="1035" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Cassandra</text>
+  <path fill="#E5F4F9" d="M918,390 H1152 A8,8 0 0 1 1160,398 V427 A8,8 0 0 1 1152,435 H918 A8,8 0 0 1 910,427 V398 A8,8 0 0 1 918,390 Z" />
+  <text x="1035" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">DynamoDB</text>
+  <path fill="#E5F4F9" d="M918,450 H1152 A8,8 0 0 1 1160,458 V487 A8,8 0 0 1 1152,495 H918 A8,8 0 0 1 910,487 V458 A8,8 0 0 1 918,450 Z" />
+  <text x="1035" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Riak</text>
+  <text x="1035" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">→ Eventual consistency</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">06 / 25</text>
+</svg>

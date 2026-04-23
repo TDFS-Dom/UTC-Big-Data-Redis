@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" />
+      <feOffset dx="0" dy="4" result="offsetBlur" />
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" />
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" />
+      <feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+
+  
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">3.1 Giới thiệu NoSQL</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <circle cx="350" cy="370" r="90" fill="#D12B1F" fill-opacity="0.1" stroke="#D12B1F" stroke-width="2" />
+  
+  <g transform="translate(326.0, 330.0) scale(3.0)" fill="#D12B1F">
+    <path d="M13.1371 6.91018C13.4184 6.7695 13.7123 6.59981 14 6.40001V8C14 9.65685 11.3137 11 8 11C4.68629 11 2 9.65685 2 8V6.40001C2.28772 6.59981 2.58158 6.7695 2.86293 6.91018C4.28096 7.61919 6.09998 8 8 8C9.90002 8 11.719 7.61919 13.1371 6.91018Z" />
+    <path d="M2 11.4V13C2 14.6569 4.68629 16 8 16C11.3137 16 14 14.6569 14 13V11.4C13.7123 11.5998 13.4184 11.7695 13.1371 11.9102C11.719 12.6192 9.90002 13 8 13C6.09998 13 4.28096 12.6192 2.86293 11.9102C2.58158 11.7695 2.28772 11.5998 2 11.4Z" />
+    <path d="M8 0C11.3137 0 14 1.34315 14 3C14 4.65685 11.3137 6 8 6C4.68629 6 2 4.65685 2 3C2 1.34315 4.68629 0 8 0Z" />
+  </g>
+  <text x="350" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D12B1F">Redis</text>
+  <text x="350" y="432" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#718096">Key-Value Store</text>
+
+  
+  <line x1="260" y1="320" x2="130" y2="200" stroke="#0B4DA2" stroke-width="2" stroke-opacity="0.4" />
+  <circle cx="130" cy="200" r="50" fill="#0B4DA2" fill-opacity="0.08" stroke="#0B4DA2" stroke-width="1.5" />
+  <text x="130" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0B4DA2">NoSQL</text>
+  <text x="130" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#718096">Not Only SQL</text>
+
+  
+  <line x1="280" y1="400" x2="120" y2="490" stroke="#006AF9" stroke-width="2" stroke-opacity="0.4" />
+  <circle cx="120" cy="490" r="50" fill="#006AF9" fill-opacity="0.08" stroke="#006AF9" stroke-width="1.5" />
+  <text x="120" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#006AF9">In-Memory</text>
+  <text x="120" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#718096">Lưu trên RAM</text>
+
+  
+  <line x1="350" y1="280" x2="350" y2="160" stroke="#2E7D32" stroke-width="2" stroke-opacity="0.4" />
+  <circle cx="350" cy="140" r="50" fill="#2E7D32" fill-opacity="0.08" stroke="#2E7D32" stroke-width="1.5" />
+  <text x="350" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2E7D32">Schemaless</text>
+  <text x="350" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#718096">Không schema</text>
+
+  
+  <line x1="440" y1="330" x2="560" y2="220" stroke="#D12B1F" stroke-width="2" stroke-opacity="0.4" />
+  <circle cx="560" cy="200" r="50" fill="#D12B1F" fill-opacity="0.08" stroke="#D12B1F" stroke-width="1.5" />
+  <text x="560" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#D12B1F">CP</text>
+  <text x="560" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#718096">CAP Theorem</text>
+
+  
+  <line x1="430" y1="410" x2="560" y2="500" stroke="#FF6B35" stroke-width="2" stroke-opacity="0.4" />
+  <circle cx="560" cy="500" r="50" fill="#FF6B35" fill-opacity="0.08" stroke="#FF6B35" stroke-width="1.5" />
+  <text x="560" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FF6B35">Horizontal</text>
+  <text x="560" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#718096">Mở rộng ngang</text>
+
+  
+  <g filter="url(#shadow)">
+    <path fill="#FFFFFF" d="M692,100 H1208 A12,12 0 0 1 1220,112 V608 A12,12 0 0 1 1208,620 H692 A12,12 0 0 1 680,608 V112 A12,12 0 0 1 692,100 Z" />
+    <path fill="#0B4DA2" d="M692,100 H1208 A12,12 0 0 1 1220,112 V138 A12,12 0 0 1 1208,150 H692 A12,12 0 0 1 680,138 V112 A12,12 0 0 1 692,100 Z" />
+    <rect x="680" y="138" width="540" height="12" fill="#0B4DA2" />
+    <text x="950" y="133" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">4 Loại NoSQL Database</text>
+
+    
+    <path fill="#E5F4F9" d="M708,170 H1192 A8,8 0 0 1 1200,178 V262 A8,8 0 0 1 1192,270 H708 A8,8 0 0 1 700,262 V178 A8,8 0 0 1 708,170 Z" />
+    
+  <g transform="translate(720.0, 195.0) scale(2.25)" fill="#D12B1F">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5.5C16 8.53757 13.5376 11 10.5 11H7V13H5V15L4 16H0V12L5.16351 6.83649C5.0567 6.40863 5 5.96094 5 5.5C5 2.46243 7.46243 0 10.5 0C13.5376 0 16 2.46243 16 5.5ZM13 4C13 4.55228 12.5523 5 12 5C11.4477 5 11 4.55228 11 4C11 3.44772 11.4477 3 12 3C12.5523 3 13 3.44772 13 4Z" />
+  </g>
+    <text x="770" y="205" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#D12B1F">Key-Value Store</text>
+    <text x="770" y="228" font-family="Arial, sans-serif" font-size="14" fill="#2D3748">Redis, DynamoDB, Riak, Memcached</text>
+    <text x="770" y="250" font-family="Arial, sans-serif" font-size="13" fill="#718096">Đơn giản nhất, tốc độ cao, cache &amp; session</text>
+
+    
+    <path fill="#F5F7FA" d="M708,280 H1192 A8,8 0 0 1 1200,288 V372 A8,8 0 0 1 1192,380 H708 A8,8 0 0 1 700,372 V288 A8,8 0 0 1 708,280 Z" />
+    
+  <g transform="translate(720.0, 305.0) scale(2.25)" fill="#0B4DA2">
+    <path d="M14 0H2V4H14V0Z" />
+    <path d="M2 6H7V10H2V6Z" />
+    <path d="M2 12H7V16H2V12Z" />
+    <path d="M9 12H14V16H9V12Z" />
+    <path d="M14 6H9V10H14V6Z" />
+  </g>
+    <text x="770" y="315" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0B4DA2">Column-Store</text>
+    <text x="770" y="338" font-family="Arial, sans-serif" font-size="14" fill="#2D3748">Cassandra, HBase</text>
+    <text x="770" y="360" font-family="Arial, sans-serif" font-size="13" fill="#718096">Lưu theo cột, phù hợp OLAP</text>
+
+    
+    <path fill="#E5F4F9" d="M708,390 H1192 A8,8 0 0 1 1200,398 V482 A8,8 0 0 1 1192,490 H708 A8,8 0 0 1 700,482 V398 A8,8 0 0 1 708,390 Z" />
+    
+  <g transform="translate(720.0, 415.0) scale(2.25)" fill="#006AF9">
+    <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z" />
+    <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z" />
+    <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z" />
+  </g>
+    <text x="770" y="425" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#006AF9">Document DB</text>
+    <text x="770" y="448" font-family="Arial, sans-serif" font-size="14" fill="#2D3748">MongoDB, CouchDB</text>
+    <text x="770" y="470" font-family="Arial, sans-serif" font-size="13" fill="#718096">Lưu JSON/XML, truy vấn linh hoạt</text>
+
+    
+    <path fill="#F5F7FA" d="M708,500 H1192 A8,8 0 0 1 1200,508 V592 A8,8 0 0 1 1192,600 H708 A8,8 0 0 1 700,592 V508 A8,8 0 0 1 708,500 Z" />
+    
+  <g transform="translate(720.0, 525.0) scale(2.25)" fill="#2E7D32">
+    <path d="M1.51967 3.30803C0.748393 4.37143 0.232465 5.63209 0.0618896 7L15.9381 7C15.7675 5.63208 15.2516 4.37142 14.4803 3.30801C14.4387 3.3313 14.3965 3.3546 14.3538 3.3779C12.8684 4.1881 10.7045 5 7.99997 5C5.29547 5 3.13149 4.1881 1.64611 3.3779C1.60342 3.35461 1.56127 3.33131 1.51967 3.30803Z" />
+    <path d="M13.0562 1.80011C11.8114 2.42548 10.0975 3 7.99997 3C5.90247 3 4.18861 2.42549 2.94376 1.80013C4.32185 0.674887 6.08211 0 8 0C9.91787 0 11.6781 0.674881 13.0562 1.80011Z" />
+    <path d="M0.0618896 9C0.232466 10.3679 0.748398 11.6286 1.51968 12.692C1.56128 12.6687 1.60344 12.6454 1.64614 12.6221C3.13152 11.8119 5.2955 11 8 11C10.7045 11 12.8685 11.8119 14.3538 12.6221C14.3966 12.6454 14.4387 12.6687 14.4803 12.692C15.2516 11.6286 15.7675 10.3679 15.9381 9L0.0618896 9Z" />
+    <path d="M8 16C6.08212 16 4.32186 15.3251 2.94377 14.1999C4.18862 13.5745 5.90249 13 8 13C10.0975 13 11.8114 13.5745 13.0562 14.1999C11.6781 15.3251 9.91788 16 8 16Z" />
+  </g>
+    <text x="770" y="535" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">Graph DB</text>
+    <text x="770" y="558" font-family="Arial, sans-serif" font-size="14" fill="#2D3748">Neo4J, InfiniteGraph</text>
+    <text x="770" y="580" font-family="Arial, sans-serif" font-size="13" fill="#718096">Node &amp; Edge, mạng xã hội</text>
+  </g>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">03 / 25</text>
+</svg>

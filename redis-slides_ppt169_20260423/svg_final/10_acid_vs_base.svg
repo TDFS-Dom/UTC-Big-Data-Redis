@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" /><feOffset dx="0" dy="4" result="offsetBlur" /><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor" /><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow" /><feMerge><feMergeNode in="shadow" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF" /><rect x="0" y="0" width="1280" height="6" fill="#0B4DA2" />
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">So sánh ACID vs BASE</text>
+  <path fill="#D12B1F" d="M61.50,68 H118.50 A1.50,1.50 0 0 1 120,69.50 V69.50 A1.50,1.50 0 0 1 118.50,71 H61.50 A1.50,1.50 0 0 1 60,69.50 V69.50 A1.50,1.50 0 0 1 61.50,68 Z" />
+
+  
+  <g filter="url(#shadow)"><path fill="#FFFFFF" d="M72,100 H608 A12,12 0 0 1 620,112 V618 A12,12 0 0 1 608,630 H72 A12,12 0 0 1 60,618 V112 A12,12 0 0 1 72,100 Z" />
+  <path fill="#0B4DA2" d="M72,100 H608 A12,12 0 0 1 620,112 V143 A12,12 0 0 1 608,155 H72 A12,12 0 0 1 60,143 V112 A12,12 0 0 1 72,100 Z" /><rect x="60" y="143" width="560" height="12" fill="#0B4DA2" />
+  <text x="340" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">ACID (RDBMS)</text></g>
+  <path fill="#E5F4F9" d="M98,175 H582 A8,8 0 0 1 590,183 V222 A8,8 0 0 1 582,230 H98 A8,8 0 0 1 90,222 V183 A8,8 0 0 1 98,175 Z" />
+  <text x="340" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Consistency ngay lập tức</text>
+  <path fill="#F5F7FA" d="M98,245 H582 A8,8 0 0 1 590,253 V292 A8,8 0 0 1 582,300 H98 A8,8 0 0 1 90,292 V253 A8,8 0 0 1 98,245 Z" />
+  <text x="340" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Ưu tiên tính đúng đắn</text>
+  <path fill="#E5F4F9" d="M98,315 H582 A8,8 0 0 1 590,323 V362 A8,8 0 0 1 582,370 H98 A8,8 0 0 1 90,362 V323 A8,8 0 0 1 98,315 Z" />
+  <text x="340" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Bi quan (Pessimistic)</text>
+  <path fill="#F5F7FA" d="M98,385 H582 A8,8 0 0 1 590,393 V432 A8,8 0 0 1 582,440 H98 A8,8 0 0 1 90,432 V393 A8,8 0 0 1 98,385 Z" />
+  <text x="340" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Phức tạp, cứng nhắc</text>
+  <path fill="#E5F4F9" d="M98,455 H582 A8,8 0 0 1 590,463 V502 A8,8 0 0 1 582,510 H98 A8,8 0 0 1 90,502 V463 A8,8 0 0 1 98,455 Z" />
+  <text x="340" y="488" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Mở rộng dọc (Vertical Scaling)</text>
+  <path fill="#0B4DA2" fill-opacity="0.08" d="M98,540 H582 A8,8 0 0 1 590,548 V587 A8,8 0 0 1 582,595 H98 A8,8 0 0 1 90,587 V548 A8,8 0 0 1 98,540 Z" />
+  <text x="340" y="573" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">MySQL, PostgreSQL, Oracle</text>
+
+  
+  <g filter="url(#shadow)"><path fill="#FFFFFF" d="M672,100 H1208 A12,12 0 0 1 1220,112 V618 A12,12 0 0 1 1208,630 H672 A12,12 0 0 1 660,618 V112 A12,12 0 0 1 672,100 Z" />
+  <path fill="#D12B1F" d="M672,100 H1208 A12,12 0 0 1 1220,112 V143 A12,12 0 0 1 1208,155 H672 A12,12 0 0 1 660,143 V112 A12,12 0 0 1 672,100 Z" /><rect x="660" y="143" width="560" height="12" fill="#D12B1F" />
+  <text x="940" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">BASE (NoSQL / Redis)</text></g>
+  <path fill="#D12B1F" fill-opacity="0.06" d="M698,175 H1182 A8,8 0 0 1 1190,183 V222 A8,8 0 0 1 1182,230 H698 A8,8 0 0 1 690,222 V183 A8,8 0 0 1 698,175 Z" />
+  <text x="940" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Eventual Consistency</text>
+  <path fill="#F5F7FA" d="M698,245 H1182 A8,8 0 0 1 1190,253 V292 A8,8 0 0 1 1182,300 H698 A8,8 0 0 1 690,292 V253 A8,8 0 0 1 698,245 Z" />
+  <text x="940" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Ưu tiên tính khả dụng</text>
+  <path fill="#D12B1F" fill-opacity="0.06" d="M698,315 H1182 A8,8 0 0 1 1190,323 V362 A8,8 0 0 1 1182,370 H698 A8,8 0 0 1 690,362 V323 A8,8 0 0 1 698,315 Z" />
+  <text x="940" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Lạc quan (Optimistic)</text>
+  <path fill="#F5F7FA" d="M698,385 H1182 A8,8 0 0 1 1190,393 V432 A8,8 0 0 1 1182,440 H698 A8,8 0 0 1 690,432 V393 A8,8 0 0 1 698,385 Z" />
+  <text x="940" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Đơn giản, linh hoạt</text>
+  <path fill="#D12B1F" fill-opacity="0.06" d="M698,455 H1182 A8,8 0 0 1 1190,463 V502 A8,8 0 0 1 1182,510 H698 A8,8 0 0 1 690,502 V463 A8,8 0 0 1 698,455 Z" />
+  <text x="940" y="488" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2D3748">Mở rộng ngang (Horizontal Scaling)</text>
+  <path fill="#D12B1F" fill-opacity="0.1" d="M698,540 H1182 A8,8 0 0 1 1190,548 V587 A8,8 0 0 1 1182,595 H698 A8,8 0 0 1 690,587 V548 A8,8 0 0 1 698,540 Z" />
+  <text x="940" y="573" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Redis, MongoDB, Cassandra</text>
+
+  
+  <circle cx="640" cy="380" r="28" fill="#FF6B35" /><text x="640" y="388" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">VS</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">10 / 25</text>
+</svg>

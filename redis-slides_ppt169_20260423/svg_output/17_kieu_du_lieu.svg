@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs><filter id="shadow" x="-15%" y="-15%" width="140%" height="140%"><feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/><feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/><feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/><feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/><rect x="0" y="0" width="1280" height="6" fill="#D12B1F"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#D12B1F">5 Kiểu dữ liệu trong Redis</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#0B4DA2"/>
+
+  <!-- String -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="100" width="370" height="180" rx="12" fill="#FFFFFF"/><rect x="60" y="100" width="370" height="6" rx="3" fill="#D12B1F"/>
+    <use data-icon="chunk/hashtag" x="90" y="130" width="32" height="32" fill="#D12B1F"/>
+    <text x="135" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D12B1F">String</text>
+    <text x="90" y="185" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Chuỗi, số, binary</text>
+    <text x="90" y="210" font-family="Arial, sans-serif" font-size="14" fill="#718096">Cache, counter, session token</text>
+    <text x="90" y="245" font-family="Consolas, monospace" font-size="13" fill="#006AF9">SET / GET / INCR / MSET</text>
+  </g>
+
+  <!-- Hash -->
+  <g filter="url(#shadow)">
+    <rect x="455" y="100" width="370" height="180" rx="12" fill="#FFFFFF"/><rect x="455" y="100" width="370" height="6" rx="3" fill="#0B4DA2"/>
+    <use data-icon="chunk/grid" x="485" y="130" width="32" height="32" fill="#0B4DA2"/>
+    <text x="530" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#0B4DA2">Hash</text>
+    <text x="485" y="185" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tập hợp field-value (object)</text>
+    <text x="485" y="210" font-family="Arial, sans-serif" font-size="14" fill="#718096">User profile, product info</text>
+    <text x="485" y="245" font-family="Consolas, monospace" font-size="13" fill="#006AF9">HSET / HGET / HGETALL</text>
+  </g>
+
+  <!-- List -->
+  <g filter="url(#shadow)">
+    <rect x="850" y="100" width="370" height="180" rx="12" fill="#FFFFFF"/><rect x="850" y="100" width="370" height="6" rx="3" fill="#006AF9"/>
+    <use data-icon="chunk/list" x="880" y="130" width="32" height="32" fill="#006AF9"/>
+    <text x="925" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#006AF9">List</text>
+    <text x="880" y="185" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Danh sách có thứ tự</text>
+    <text x="880" y="210" font-family="Arial, sans-serif" font-size="14" fill="#718096">Message queue, timeline</text>
+    <text x="880" y="245" font-family="Consolas, monospace" font-size="13" fill="#006AF9">LPUSH / RPUSH / LPOP</text>
+  </g>
+
+  <!-- Set -->
+  <g filter="url(#shadow)">
+    <rect x="170" y="310" width="420" height="180" rx="12" fill="#FFFFFF"/><rect x="170" y="310" width="420" height="6" rx="3" fill="#2E7D32"/>
+    <use data-icon="chunk/layers" x="200" y="340" width="32" height="32" fill="#2E7D32"/>
+    <text x="245" y="360" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2E7D32">Set</text>
+    <text x="200" y="395" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tập hợp không trùng lặp, không thứ tự</text>
+    <text x="200" y="420" font-family="Arial, sans-serif" font-size="14" fill="#718096">Tags, unique visitors, phép toán tập hợp</text>
+    <text x="200" y="455" font-family="Consolas, monospace" font-size="13" fill="#006AF9">SADD / SMEMBERS / SINTER / SUNION</text>
+  </g>
+
+  <!-- Sorted Set -->
+  <g filter="url(#shadow)">
+    <rect x="620" y="310" width="520" height="180" rx="12" fill="#FFFFFF"/><rect x="620" y="310" width="520" height="6" rx="3" fill="#FF6B35"/>
+    <use data-icon="chunk/star" x="650" y="340" width="32" height="32" fill="#FF6B35"/>
+    <text x="695" y="360" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FF6B35">Sorted Set</text>
+    <text x="650" y="395" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Tập hợp không trùng lặp + điểm số (score)</text>
+    <text x="650" y="420" font-family="Arial, sans-serif" font-size="14" fill="#718096">Leaderboard, ranking, bảng xếp hạng</text>
+    <text x="650" y="455" font-family="Consolas, monospace" font-size="13" fill="#006AF9">ZADD / ZREVRANGE / ZRANK / ZCOUNT</text>
+  </g>
+
+  <!-- Central Redis -->
+  <circle cx="640" cy="570" r="50" fill="#D12B1F" fill-opacity="0.1" stroke="#D12B1F" stroke-width="2"/>
+  <use data-icon="chunk/database" x="616" y="546" width="48" height="48" fill="#D12B1F"/>
+  <text x="640" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Redis Data Types</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">17 / 25</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/><feOffset dx="0" dy="4" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.12" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="6" fill="#0B4DA2"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#0B4DA2">Phân loại Database theo CAP</text>
+  <rect x="60" y="68" width="60" height="3" rx="1.5" fill="#D12B1F"/>
+
+  <!-- CA Card -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="110" width="370" height="500" rx="12" fill="#FFFFFF"/>
+    <rect x="60" y="110" width="370" height="60" rx="12" fill="#0B4DA2"/>
+    <rect x="60" y="158" width="370" height="12" fill="#0B4DA2"/>
+    <text x="245" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">CA</text>
+  </g>
+  <text x="245" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">Consistency + Availability</text>
+  <text x="245" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Nhất quán + Khả dụng</text>
+  <rect x="100" y="260" width="290" height="2" fill="#E2E8F0"/>
+  <text x="245" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Không chịu lỗi phân vùng</text>
+  <rect x="120" y="330" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="245" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">MySQL</text>
+  <rect x="120" y="390" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="245" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">PostgreSQL</text>
+  <rect x="120" y="450" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="245" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">Oracle</text>
+  <text x="245" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">→ RDBMS truyền thống</text>
+
+  <!-- CP Card - Highlighted -->
+  <g filter="url(#shadow)">
+    <rect x="455" y="100" width="370" height="520" rx="12" fill="#FFFFFF"/>
+    <rect x="455" y="100" width="370" height="65" rx="12" fill="#D12B1F"/>
+    <rect x="455" y="153" width="370" height="12" fill="#D12B1F"/>
+    <text x="640" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">CP</text>
+  </g>
+  <rect x="465" y="95" width="50" height="22" rx="11" fill="#FF6B35"/>
+  <text x="490" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">Redis</text>
+  <text x="640" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Consistency + Partition Tol.</text>
+  <text x="640" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Nhất quán + Chịu lỗi phân vùng</text>
+  <rect x="495" y="255" width="290" height="2" fill="#E2E8F0"/>
+  <text x="640" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Hy sinh một phần khả dụng</text>
+  <rect x="515" y="320" width="250" height="45" rx="8" fill="#D12B1F" fill-opacity="0.08" stroke="#D12B1F" stroke-width="1.5"/>
+  <text x="640" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D12B1F">Redis</text>
+  <rect x="515" y="380" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="640" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">MongoDB</text>
+  <rect x="515" y="440" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="640" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">HBase</text>
+  <rect x="515" y="500" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="640" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0B4DA2">BigTable</text>
+
+  <!-- AP Card -->
+  <g filter="url(#shadow)">
+    <rect x="850" y="110" width="370" height="500" rx="12" fill="#FFFFFF"/>
+    <rect x="850" y="110" width="370" height="60" rx="12" fill="#2E7D32"/>
+    <rect x="850" y="158" width="370" height="12" fill="#2E7D32"/>
+    <text x="1035" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">AP</text>
+  </g>
+  <text x="1035" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Availability + Partition Tol.</text>
+  <text x="1035" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">Khả dụng + Chịu lỗi phân vùng</text>
+  <rect x="890" y="260" width="290" height="2" fill="#E2E8F0"/>
+  <text x="1035" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#2D3748">Hy sinh tính nhất quán</text>
+  <rect x="910" y="330" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="1035" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Cassandra</text>
+  <rect x="910" y="390" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="1035" y="418" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">DynamoDB</text>
+  <rect x="910" y="450" width="250" height="45" rx="8" fill="#E5F4F9"/>
+  <text x="1035" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">Riak</text>
+  <text x="1035" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#718096">→ Eventual consistency</text>
+
+  <text x="1220" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#A0AEC0">06 / 25</text>
+</svg>
